@@ -11,30 +11,30 @@ Short Description
       |
       v
 ┌─────────────────────┐
-│  Questionnaire Gen   │  LLM expands description into context,
-│  (2-step LLM)        │  diversity axes, and Likert-scale items
+│  Questionnaire Gen  │  LLM expands description into context,
+│  (2-step LLM)       │  diversity axes, and Likert-scale items
 └─────────┬───────────┘
           v
 ┌─────────────────────┐
-│  Persona Generator   │  Stage 1: Sobol sampling → persona descriptors
-│  (2-stage)           │  Stage 2: Parallel expansion → full personas
+│  Persona Generator  │  Stage 1: Sobol sampling → persona descriptors
+│  (2-stage)          │  Stage 2: Parallel expansion → full personas
 └─────────┬───────────┘
           v
 ┌─────────────────────┐
-│  Simulation          │  Each persona answers each item via
-│  (Logic of           │  "logic of appropriateness" (3 questions)
-│   Appropriateness)   │  Memory reset between items
+│  Simulation         │  Each persona answers each item via
+│  (Logic of          │  "logic of appropriateness" (3 questions)
+│   Appropriateness)  │  Memory reset between items
 └─────────┬───────────┘
           v
 ┌─────────────────────┐
-│  Diversity Metrics   │  6 metrics: coverage, convex hull volume,
-│                      │  min/mean pairwise distance, dispersion,
-│                      │  KL divergence
+│  Diversity Metrics  │  6 metrics: coverage, convex hull volume,
+│                     │  min/mean pairwise distance, dispersion,
+│                     │  KL divergence
 └─────────┬───────────┘
           v
 ┌─────────────────────┐
-│  Evolution (optional)│  AlphaEvolve-style loop: mutate generator
-│                      │  code, evaluate, keep per-metric elites
+│ Evolution (optional)│  AlphaEvolve-style loop: mutate generator
+│                     │  code, evaluate, keep per-metric elites
 └─────────────────────┘
 ```
 
