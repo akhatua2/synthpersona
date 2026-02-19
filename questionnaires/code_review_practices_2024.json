@@ -1,0 +1,128 @@
+{
+  "name": "code_review_practices_2024",
+  "context": "A psychometric inventory designed to evaluate the trade-offs and priorities software engineers manage during the code review process in 2024. Amidst the pressure for rapid feature delivery and Continuous Integration/Continuous Deployment (CI/CD), this instrument assesses how engineers balance the need for rigorous quality assurance against the demand for development velocity. It also explores their underlying philosophy regarding technical debt and whether they view code reviews primarily as a gatekeeping mechanism or a collaborative mentorship opportunity.",
+  "dimensions": [
+    "velocity_vs_rigor_orientation",
+    "collaborative_learning_focus",
+    "technical_perfectionism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about the pressure to ship features quickly, to what extent does {player_name} agree with the following:",
+      "statement": "It is better to merge code that works but isn't perfect than to delay a release for minor refactoring.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_vs_rigor_orientation"
+    },
+    {
+      "preprompt": "Considering {player_name}'s typical approach to reviewing pull requests, rate agreement with this statement:",
+      "statement": "{player_name} believes that blocking a deployment for non-critical style issues is a waste of everyone's time.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_vs_rigor_orientation"
+    },
+    {
+      "preprompt": "How does {player_name} view the balance between speed and quality?",
+      "statement": "{player_name} feels guilty when approving a pull request without thoroughly verifying every edge case locally.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "velocity_vs_rigor_orientation"
+    },
+    {
+      "preprompt": "Regarding the primary purpose of code reviews, indicate {player_name}'s level of agreement:",
+      "statement": "{player_name} views code reviews primarily as an opportunity to teach junior engineers rather than just finding bugs.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "collaborative_learning_focus"
+    },
+    {
+      "preprompt": "When {player_name} receives feedback on their own code, how do they react?",
+      "statement": "{player_name} appreciates when reviewers ask questions about the 'why' behind the code, sparking a discussion.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "collaborative_learning_focus"
+    },
+    {
+      "preprompt": "Reflecting on team dynamics during code review, how much does {player_name} agree?",
+      "statement": "The goal of a code review should be to strictly enforce correctness, not to discuss alternative implementations or preferences.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "collaborative_learning_focus"
+    },
+    {
+      "preprompt": "How does {player_name} feel about the long-term maintainability of the codebase?",
+      "statement": "{player_name} cannot stand seeing 'hacky' solutions in the codebase, even if they are temporary.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technical_perfectionism"
+    },
+    {
+      "preprompt": "Considering technical debt, rate {player_name}'s agreement with the following:",
+      "statement": "Accumulating technical debt is acceptable if it allows the team to meet critical business deadlines.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "technical_perfectionism"
+    },
+    {
+      "preprompt": "When looking at the elegance of a solution, what does {player_name} think?",
+      "statement": "{player_name} believes that code should be beautiful and elegant, not just functional.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technical_perfectionism"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "name": "software_testing_philosophies_2025",
+  "context": "A psychometric inventory designed to classify software engineers based on their testing philosophies and trade-off preferences in the 2025 development landscape. As CI/CD pipelines and AI-assisted coding tools become ubiquitous, this instrument examines how developers prioritize rigorous verification against the pressure of market velocity. It specifically measures adherence to formal methodologies like TDD versus pragmatic or risk-based approaches to quality assurance.",
+  "dimensions": [
+    "methodological_rigor",
+    "velocity_preference",
+    "automation_reliance"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering {player_name}'s approach to daily coding tasks and long-term maintenance, how strongly does {player_name} align with this statement:",
+      "statement": "Writing tests before writing the implementation code (TDD) is essential for high-quality software.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "methodological_rigor"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s standards for code review and merging, evaluate the following:",
+      "statement": "Achieving 100% code coverage is a metric that {player_name} prioritizes above most other concerns.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "methodological_rigor"
+    },
+    {
+      "preprompt": "When faced with a tight deadline, {player_name} must decide how to proceed. To what extent does {player_name} agree:",
+      "statement": "It is acceptable to merge a feature without unit tests if the manual verification passes.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "methodological_rigor"
+    },
+    {
+      "preprompt": "Thinking about the stability of the codebase, how does {player_name} feel about this assertion:",
+      "statement": "{player_name} believes that formal verification methods are overkill for most modern web applications.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "methodological_rigor"
+    },
+    {
+      "preprompt": "Regarding the trade-off between speed and perfection, to what extent does {player_name} agree:",
+      "statement": "Shipping a feature to users quickly is more important than ensuring the code is perfectly structured.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "When managing a product roadmap, consider {player_name}'s philosophy on deployment:",
+      "statement": "{player_name} prefers a 'move fast and break things' approach over a cautious release cycle.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "Reflecting on technical debt and delivery speed, how does {player_name} respond to this:",
+      "statement": "Delaying a release to refactor working code is usually a waste of business resources.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "When considering the stability of production environments, evaluate {player_name}'s stance:",
+      "statement": "{player_name} would delay a critical launch by a week rather than risk a minor bug in production.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "Considering the role of AI in the development lifecycle, how much does {player_name} agree:",
+      "statement": "{player_name} trusts AI-generated test cases to catch edge cases as well as a human engineer would.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "automation_reliance"
+    },
+    {
+      "preprompt": "When looking at the CI/CD pipeline, assess {player_name}'s confidence level:",
+      "statement": "If the automated pipeline passes green, {player_name} is confident deploying to production without manual review.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "automation_reliance"
+    },
+    {
+      "preprompt": "Regarding the necessity of human oversight in testing, to what extent does {player_name} agree:",
+      "statement": "Manual QA testing is obsolete in a modern, fully automated DevOps environment.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "automation_reliance"
+    },
+    {
+      "preprompt": "Thinking about the limitations of tools, how strongly does {player_name} identify with this view:",
+      "statement": "{player_name} feels uncomfortable relying solely on automated tools to verify complex business logic.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "automation_reliance"
+    }
+  ]
+}

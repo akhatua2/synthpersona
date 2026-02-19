@@ -28,6 +28,10 @@ class LLMClient:
     def __init__(self, settings: Settings | None = None) -> None:
         self.settings = settings or get_settings()
         self._semaphore = asyncio.Semaphore(self.settings.max_concurrency)
+        self.total_cost = 0.0
+        self.total_calls = 0
+        self.total_input_tokens = 0
+        self.total_output_tokens = 0
 
     @retry(
         stop=stop_after_attempt(5),
@@ -60,9 +64,26 @@ class LLMClient:
         async with self._semaphore:
             response = await litellm.acompletion(**kwargs)
 
+        # Track cost via litellm's built-in calculator
+        try:
+            self.total_cost += litellm.completion_cost(completion_response=response)
+        except Exception:
+            pass
+        usage = getattr(response, "usage", None)
+        if usage:
+            self.total_input_tokens += getattr(usage, "prompt_tokens", 0) or 0
+            self.total_output_tokens += getattr(usage, "completion_tokens", 0) or 0
+        self.total_calls += 1
+
         content = response.choices[0].message.content or ""
         return content
 
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=30),
+        retry=retry_if_exception_type(json.JSONDecodeError),
+        reraise=True,
+    )
     async def complete_json(
         self,
         model: str,

@@ -1,0 +1,141 @@
+{
+  "name": "open_source_collaboration_2024",
+  "context": "A psychometric survey designed to measure software developers' ideological and practical stances towards software creation and distribution in 2024. Amidst the rise of AI-generated code and increasing commercial scrutiny of open ecosystems, this instrument evaluates the tension between collaborative, libre software philosophies and the pragmatic or protective embrace of proprietary models. It seeks to understand how developers weigh the benefits of community-driven innovation against the incentives of closed-source monetization and intellectual property protection.",
+  "dimensions": [
+    "ideological_commitment_to_foss",
+    "proprietary_protectionism",
+    "community_collaboration_preference"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about the philosophy of software development, how does {player_name} feel about the following statement?",
+      "statement": "Software source code should be freely available for anyone to study, modify, and redistribute.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ideological_commitment_to_foss"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s values as a developer, consider this statement:",
+      "statement": "The world would be a better place if all software were open source.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ideological_commitment_to_foss"
+    },
+    {
+      "preprompt": "Considering {player_name}'s view on intellectual property, please rate agreement with the following:",
+      "statement": "Developers have a moral obligation to prevent others from using their code without payment.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "ideological_commitment_to_foss"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree with this perspective on business strategy?",
+      "statement": "Keeping source code closed is the only reliable way to build a sustainable software business.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "proprietary_protectionism"
+    },
+    {
+      "preprompt": "Regarding the security and value of code, what is {player_name}'s stance on this statement?",
+      "statement": "Strict copyright enforcement and closed ecosystems are necessary to protect intellectual property from theft.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "proprietary_protectionism"
+    },
+    {
+      "preprompt": "Thinking about the risks of sharing work, does {player_name} agree with the following?",
+      "statement": "It is foolish to worry about 'competitors' seeing your code; innovation matters more than secrecy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "proprietary_protectionism"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s preferred working style, consider this statement:",
+      "statement": "I produce better code when I can get immediate feedback and contributions from a global community.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_collaboration_preference"
+    },
+    {
+      "preprompt": "How does {player_name} feel about the social aspect of coding?",
+      "statement": "The best part of software development is the shared sense of mission found in open contributor networks.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_collaboration_preference"
+    },
+    {
+      "preprompt": "Considering how {player_name} handles project management, rate agreement with the following:",
+      "statement": "Dealing with pull requests and external contributors is more of a burden than a benefit.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "community_collaboration_preference"
+    },
+    {
+      "preprompt": "Thinking about project governance, what is {player_name}'s reaction to this statement?",
+      "statement": "{player_name} prefers working in small, private teams where decision-making is centralized and efficient.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "community_collaboration_preference"
+    }
+  ]
+}

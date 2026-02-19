@@ -1,0 +1,101 @@
+{
+  "name": "technical_debt_management_2025",
+  "context": "A psychometric inventory designed for software engineers working in the fast-paced development environments of 2025. This survey investigates how developers navigate the perpetual tension between delivering new features rapidly ('shipping') and maintaining long-term code health. It assesses individual philosophies on code quality, willingness to tolerate 'spaghetti code' for short-term gains, and preferences regarding when (or if) to pay down accumulated technical debt.",
+  "dimensions": [
+    "velocity_preference",
+    "perfectionism_tolerance"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering {player_name}'s daily workflow and priorities as a developer, how strongly does {player_name} agree with this statement?",
+      "statement": "Getting a feature into the hands of users is more important than ensuring the underlying code is elegant.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "Reflecting on how {player_name} handles project deadlines, to what extent does {player_name} agree?",
+      "statement": "It is better to delay a release significantly than to ship code that feels 'hacky' or unstable.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "When thinking about trade-offs in development, what is {player_name}'s stance on the following?",
+      "statement": "{player_name} is comfortable merging 'quick and dirty' solutions if it means meeting a critical sprint goal.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "velocity_preference"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s approach to code reviews and quality standards, how does {player_name} feel about this?",
+      "statement": "{player_name} feels physical discomfort when asked to compromise on code structure or best practices.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perfectionism_tolerance"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s willingness to refactor versus build new things, to what extent does {player_name} agree?",
+      "statement": "Spending time refactoring old code feels like a waste of time compared to building new features.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perfectionism_tolerance"
+    },
+    {
+      "preprompt": "Considering the long-term maintainability of the codebase, how does {player_name} view this statement?",
+      "statement": "{player_name} believes that technical debt should be paid down immediately, even if it halts all new feature development.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perfectionism_tolerance"
+    },
+    {
+      "preprompt": "When evaluating a pull request or their own work, how strongly does {player_name} agree?",
+      "statement": "Good enough is better than perfect.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perfectionism_tolerance"
+    }
+  ]
+}
