@@ -11,3 +11,9 @@ build/
 paper/
 .claude/
 
+# Generated outputs
+questionnaires/
+best_generator.py
+*_personas.json
+*_embeddings.json
+agi_questionnaire.json

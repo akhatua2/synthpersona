@@ -6,7 +6,17 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
 authors = [{ name = "Arpan" }]
-dependencies = []
+dependencies = [
+    "litellm[google]>=1.50",
+    "pydantic>=2.10",
+    "pydantic-settings>=2.7",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+    "scipy>=1.14",
+    "click>=8.1",
+    "tenacity>=9.0",
+    "structlog>=24.4",
+]
 
 [project.scripts]
 synthpersona = "synthpersona.cli:main"
