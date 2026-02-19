@@ -1,0 +1,141 @@
+{
+  "name": "mali_empire_scholars_timbuktu_1350ad",
+  "context": "A psychometric evaluation of the intellectual and social attitudes of Islamic scholars in Timbuktu during the height of the Mali Empire. \n\nAround 1350 AD, Timbuktu was a flourishing center of trade and learning, attracting students and manuscripts from across the Islamic world. This instrument explores the mindset of the scribes and jurists working within the Sankore Madrasah, assessing their views on the preservation of knowledge, the integration of foreign versus local traditions, and the role of wealth in spiritual pursuit.",
+  "dimensions": [
+    "orthodoxy_vs_syncretism",
+    "preservation_vs_dissemination",
+    "material_patronage_acceptance"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the relationship between the Holy Qur'an and local customs, to what extent does {player_name} agree with the following statement?",
+      "statement": "The only valid law is that which comes directly from the holy texts; local Malian traditions that deviate even slightly must be abandoned.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "orthodoxy_vs_syncretism"
+    },
+    {
+      "preprompt": "Regarding the spiritual practices of the common people in Timbuktu, {player_name} considers:",
+      "statement": "It is acceptable to blend the veneration of local spirits with Islamic prayer if it helps bring the people closer to Allah.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "orthodoxy_vs_syncretism"
+    },
+    {
+      "preprompt": "When judging legal matters brought before the qadi, {player_name} believes:",
+      "statement": "The strict Sharia must be applied without exception, even if it disrupts the harmony of established tribal alliances.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "orthodoxy_vs_syncretism"
+    },
+    {
+      "preprompt": "Considering the vast library of manuscripts at the Sankore Madrasah, {player_name} feels:",
+      "statement": "True wisdom should be guarded closely by the learned elite, lest it be misunderstood and corrupted by the uneducated masses.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "preservation_vs_dissemination"
+    },
+    {
+      "preprompt": "Thinking about the role of a scholar in society, {player_name} asserts:",
+      "statement": "It is the sacred duty of a scribe to translate and simplify great works so that even a merchant or farmer might understand the divine truth.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "preservation_vs_dissemination"
+    },
+    {
+      "preprompt": "When a stranger asks to copy a rare manuscript, {player_name}'s instinct is:",
+      "statement": "Knowledge is a rare jewel that loses its value if it is shared too freely with those outside our circle of scholars.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "preservation_vs_dissemination"
+    },
+    {
+      "preprompt": "Considering the immense gold wealth of the Mansa and the merchant class, {player_name} believes:",
+      "statement": "A scholar should reject lavish gifts from the wealthy, as dependence on gold corrupts the purity of one's intent.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "material_patronage_acceptance"
+    },
+    {
+      "preprompt": "Regarding the expansion of the university through royal funding, {player_name} holds the view that:",
+      "statement": "The glory of Islam is best demonstrated through the construction of magnificent mosques and libraries funded by the riches of the trade routes.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "material_patronage_acceptance"
+    },
+    {
+      "preprompt": "When offered a stipend by a wealthy trans-Saharan trader, {player_name} thinks:",
+      "statement": "Accepting gold in exchange for writing legal opinions creates a dangerous conflict of interest for a man of God.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "material_patronage_acceptance"
+    },
+    {
+      "preprompt": "Reflecting on the balance between poverty and influence, {player_name} feels:",
+      "statement": "Wealth is a blessing from Allah that allows a scholar to purchase more paper, ink, and books to further the pursuit of knowledge.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "material_patronage_acceptance"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "name": "american_conspiracy_theories_2024",
+  "context": "Questionnaire assessing belief in common American conspiracy theories.\n\nThis instrument measures an individual's propensity to endorse various conspiracy theories prevalent in the United States in 2024. It covers a spectrum of theories related to historical events, science and medicine, and politics, allowing for a nuanced assessment of conspiratorial ideation.",
+  "dimensions": [
+    "historical_conspiracies",
+    "scientific_medical_conspiracies",
+    "political_deep_state_conspiracies"
+  ],
+  "questions": [
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The U.S. government faked the Apollo moon landings.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "historical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The assassination of John F. Kennedy was the result of a coordinated conspiracy, not the act of a lone gunman.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "historical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The 9/11 attacks were an inside job orchestrated by elements within the U.S. government.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "historical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The rollout of 5G cellular networks is a cover for a widespread surveillance program and causes severe health problems.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "scientific_medical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "Childhood vaccines cause autism, and this fact is covered up by pharmaceutical companies and government health agencies.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "scientific_medical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The COVID-19 pandemic was intentionally planned by a global elite to enforce social control and mandatory vaccinations.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "scientific_medical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "Climate change is a hoax created by scientists and governments to control people's lives and destroy the economy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "scientific_medical_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The 2020 U.S. presidential election was stolen through widespread fraud.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "political_deep_state_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "A secret cabal of global elites, often referred to as the 'Deep State', controls major world events and governments from behind the scenes.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "political_deep_state_conspiracies"
+    },
+    {
+      "preprompt": "How strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The QAnon theory, which alleges a global cabal of Satan-worshipping pedophiles is running a child sex-trafficking ring, is largely true.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "political_deep_state_conspiracies"
+    }
+  ]
+}

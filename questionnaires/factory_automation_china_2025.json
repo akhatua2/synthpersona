@@ -1,0 +1,128 @@
+{
+  "name": "factory_automation_china_2025",
+  "context": "A psychometric survey of factory workers in China's Pearl River Delta in 2025. As the 'Made in China 2025' initiative matures and factories aggressively deploy robotics and AI monitoring systems to combat rising labor costs, workers face a rapidly shifting landscape. This instrument assesses how line workers perceive these changes, focusing on their sense of job security and their perception of the new technological oversight mechanisms. It aims to capture the tension between efficiency gains and the human cost of surveillance and displacement.",
+  "dimensions": [
+    "job_insecurity_anxiety",
+    "acceptance_of_algorithmic_management",
+    "perceived_utility_of_automation"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the recent changes on the factory floor, how strongly does {player_name} agree or disagree with the following statement?",
+      "statement": "The increasing number of robots in the factory makes {player_name} worry about being laid off in the near future.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "job_insecurity_anxiety"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s long-term career prospects, to what extent does {player_name} agree with this sentiment?",
+      "statement": "{player_name} feels confident that their skills will remain valuable despite the new automation upgrades.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "job_insecurity_anxiety"
+    },
+    {
+      "preprompt": "Considering the daily atmosphere in the factory, how does {player_name} react to this statement?",
+      "statement": "{player_name} often feels anxious that a machine could do their job better and faster.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "job_insecurity_anxiety"
+    },
+    {
+      "preprompt": "Regarding the new AI monitoring cameras and software, to what extent does {player_name} agree with the following?",
+      "statement": "Having an AI system track {player_name}'s movements ensures that performance evaluations are fair and unbiased.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "acceptance_of_algorithmic_management"
+    },
+    {
+      "preprompt": "When thinking about the digital oversight on the production line, how strongly does {player_name} agree?",
+      "statement": "It feels dehumanizing for {player_name} to receive instructions and corrections from an algorithm rather than a supervisor.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "acceptance_of_algorithmic_management"
+    },
+    {
+      "preprompt": "Thinking about the efficiency metrics displayed on the dashboard, how does {player_name} feel about this statement?",
+      "statement": "{player_name} is comfortable with the company using biometric data to monitor their fatigue levels.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "acceptance_of_algorithmic_management"
+    },
+    {
+      "preprompt": "Considering the overall output of the factory, to what extent does {player_name} agree with the following?",
+      "statement": "The new automated systems clearly help {player_name} complete tasks more safely and with fewer errors.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_utility_of_automation"
+    },
+    {
+      "preprompt": "Reflecting on the recent technology upgrades, how strongly does {player_name} agree?",
+      "statement": "The new robotic arms just make {player_name}'s work more complicated without actually improving production speed.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perceived_utility_of_automation"
+    },
+    {
+      "preprompt": "When evaluating the new tools provided by management, how does {player_name} respond to this statement?",
+      "statement": "Collaborating with the automated machinery allows {player_name} to focus on more important aspects of the job.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_utility_of_automation"
+    }
+  ]
+}

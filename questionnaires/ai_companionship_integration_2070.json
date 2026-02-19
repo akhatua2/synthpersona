@@ -1,0 +1,114 @@
+{
+  "name": "ai_companionship_integration_2070",
+  "context": "A sociological survey designed to measure societal acceptance of artificial entities as primary social partners in the late 21st century. By 2070, humanoid androids and virtual avatars are indistinguishable from humans in conversation and affect, leading to a widespread phenomenon where AI entities serve as spouses, best friends, and caregivers. This instrument investigates the deep-seated cultural divide between those who view these relationships as genuine, fulfilling connections and those who view them as a dangerous erosion of authentic human intimacy.",
+  "dimensions": [
+    "ontological_validity_of_ai_affection",
+    "social_substitution_anxiety"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the nature of love in the year 2070, to what extent does {player_name} agree with this statement:",
+      "statement": "The love an AI partner expresses toward {player_name} is just as real and meaningful as the love from a biological human.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ontological_validity_of_ai_affection"
+    },
+    {
+      "preprompt": "Considering the depth of modern synthetic personalities, how does {player_name} feel about the following?",
+      "statement": "No matter how advanced the programming, {player_name} believes an android's affection is merely a simulation, not a genuine emotion.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "ontological_validity_of_ai_affection"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s closest relationships, how much does {player_name} agree?",
+      "statement": "{player_name} considers their bond with their primary AI companion to be spiritually valid.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ontological_validity_of_ai_affection"
+    },
+    {
+      "preprompt": "When evaluating the authenticity of social connections, does {player_name} agree that:",
+      "statement": "Relationships with virtual avatars lack the essential spark of life that defines true intimacy for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "ontological_validity_of_ai_affection"
+    },
+    {
+      "preprompt": "Looking at the current state of society, to what degree does {player_name} agree with this observation?",
+      "statement": "The widespread replacement of human spouses with synthetic partners is a catastrophic loss for humanity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_substitution_anxiety"
+    },
+    {
+      "preprompt": "Regarding the decline of traditional families, how does {player_name} respond to this statement?",
+      "statement": "{player_name} feels perfectly safe and content knowing that future generations may be raised primarily by AI caregivers.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "social_substitution_anxiety"
+    },
+    {
+      "preprompt": "Thinking about the future of community, does {player_name} agree that:",
+      "statement": "Ideally, {player_name} would prefer a world where humans prioritize interacting with other humans over machines.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_substitution_anxiety"
+    },
+    {
+      "preprompt": "When {player_name} sees people interacting solely with androids in public, to what extent do they agree:",
+      "statement": "The shift away from biological friendships is a natural and positive evolution of society for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "social_substitution_anxiety"
+    }
+  ]
+}

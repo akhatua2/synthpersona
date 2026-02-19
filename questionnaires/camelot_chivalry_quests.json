@@ -1,0 +1,167 @@
+{
+  "name": "camelot_chivalry_quests",
+  "context": "A psychometric evaluation of the philosophical and ethical frameworks held by Arthurian knights. Set within the mythical court of Camelot, this instrument assesses the divergence in how knights interpret their vows and prioritize their duties. It seeks to distinguish between those who view chivalry as rigid adherence to code versus those who see it as a flexible tool for justice, as well as their motivations for undertaking dangerous quests.",
+  "dimensions": [
+    "dogmatic_honor_vs_pragmatic_justice",
+    "quest_motivation_glory_vs_service",
+    "courtly_love_idealism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the sacred vows taken before the Round Table, to what extent does {player_name} agree with this principle:",
+      "statement": "A knight must follow the letter of the Chivalric Code, even if doing so leads to an unjust outcome for the innocent.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "dogmatic_honor_vs_pragmatic_justice"
+    },
+    {
+      "preprompt": "When faced with a complex moral dilemma during a quest, how does {player_name} view their duty:",
+      "statement": "{player_name} believes that preserving one's personal honor is more important than achieving a practical victory for the realm.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "dogmatic_honor_vs_pragmatic_justice"
+    },
+    {
+      "preprompt": "Considering the flexibility of knightly virtues, how would {player_name} respond to this assertion:",
+      "statement": "It is better for {player_name} to break a sworn oath than to allow that oath to cause unnecessary suffering.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "dogmatic_honor_vs_pragmatic_justice"
+    },
+    {
+      "preprompt": "In a hypothetical dispute between two lords, what guides {player_name}'s judgment:",
+      "statement": "Rules and traditions should be bent if it ensures that true justice is served.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "dogmatic_honor_vs_pragmatic_justice"
+    },
+    {
+      "preprompt": "When the bards sing of great deeds, what resonates most with {player_name}:",
+      "statement": "The primary reason to slay a beast is to have {player_name}'s name recorded in the annals of history forever.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "quest_motivation_glory_vs_service"
+    },
+    {
+      "preprompt": "Regarding the true purpose of leaving Camelot on a quest, how does {player_name} feel:",
+      "statement": "A quest is worthless if it does not bring personal renown and elevate {player_name}'s standing at court.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "quest_motivation_glory_vs_service"
+    },
+    {
+      "preprompt": "When considering the anonymity of good deeds, how would {player_name} react:",
+      "statement": "{player_name} would be perfectly content to save a village from ruin even if no soul ever learned who did it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "quest_motivation_glory_vs_service"
+    },
+    {
+      "preprompt": "Thinking about the dangers of the road, what drives {player_name} forward:",
+      "statement": "The protection of the weak is a far greater reward than any trophy or title bestowed by the King.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "quest_motivation_glory_vs_service"
+    },
+    {
+      "preprompt": "On the subject of romantic devotion and the inspiration it provides, does {player_name} agree:",
+      "statement": "True love is a spiritual force that purifies the soul and guides a knight toward perfection.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "courtly_love_idealism"
+    },
+    {
+      "preprompt": "When engaging in courtly service to a lady or lord, how does {player_name} view the relationship:",
+      "statement": "One's devotion to a beloved should be absolute, transcending physical desire or worldly practicality.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "courtly_love_idealism"
+    },
+    {
+      "preprompt": "Considering the pragmatic realities of marriage and alliances, what is {player_name}'s stance:",
+      "statement": "The rituals of courtly love are merely a distracting game that interferes with the serious business of war and politics.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "courtly_love_idealism"
+    },
+    {
+      "preprompt": "Reflecting on the tales of Lancelot and Guinevere or Tristan and Iseult, how does {player_name} react:",
+      "statement": "{player_name} finds the concept of suffering for an unattainable love to be foolish rather than noble.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "courtly_love_idealism"
+    }
+  ]
+}

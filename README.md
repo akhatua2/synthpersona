@@ -2,66 +2,129 @@
 
 > **Unofficial implementation** of ["Persona Generators: Generating Diverse Synthetic Personas at Scale"](https://arxiv.org/abs/2602.03545) (Paglieri et al., 2026, Google DeepMind).
 
-Generate diverse populations of synthetic personas for any context. The pipeline takes a short text description, expands it into a structured questionnaire with diversity axes, generates a population of unique personas using Sobol quasi-random sampling, simulates their responses, and measures population diversity across six metrics. An optional evolutionary loop (inspired by AlphaEvolve) iteratively improves the generator code.
+Generate diverse populations of synthetic personas for any context. Give it a short text description, and it produces a population of unique personas spanning the full range of relevant attitudes and behaviors — not just stereotypical LLM outputs.
+
+## Paper Architecture
+
+The diagram below shows the **full system from the paper** (Figure 1). Boxes marked with **[WE USE]** are what this implementation provides out of the box. The **AlphaEvolve** feedback loop is implemented but optional — the paper's evolved generators have not been publicly released.
+
+```
+                                   ┌───────────────┐
+                                   │  AlphaEvolve  │◄──────────────────────────────┐
+                                   │  (mutate      │                               │
+                                   │   generator   │                               │
+                                   │   source code)│                               │
+                                   └──────┬────────┘                               │
+                                          │ mutated Python code                    │
+                  [IMPLEMENTED,           │                                        │
+                   OPTIONAL]              v                                        │
+                               ╔══════════════════════╗                            │
+  ┌──────────────────┐         ║  Persona Generator   ║     ┌──────────────────┐   │
+  │  Questionnaires  │         ║  G_φ,θ (c, D, N)     ║────>│  Population of   │   │
+  │  q ~ Q           │         ║                      ║     │  N = 25 Personas │   │
+  │                  │         ║  Stage 1: Sobol +    ║     │  P               │   │
+  │ ┌──────────────┐ │ context ║   descriptors        ║     │                  │   │
+  │ │  Context  c  │─┼────────>║  Stage 2: parallel   ║     │ Full text desc.  │   │
+  │ ├──────────────┤ │  dims   ║   expansion          ║     │ for each persona │   │
+  │ │ Dimensions D │─┼────────>║                      ║     └────────┬─────────┘   │
+  │ ├──────────────┤ │         ╚══════════════════════╝              │             │
+  │ │ Questions  I │─┼──┐          [WE USE]                          │             │
+  │ └──────────────┘ │  │                                            │             │
+  └──────────────────┘  │                                            v             │
+      [WE USE]          │     ┌──────────────────────────────────────────────┐     │
+   50 questionnaires    │     │  Simulation  Z = Ψ(P, I)                     │     │
+   included             └────>│                                              │     │
+                              │  For each persona × question:                │     │
+                              │   1. "What kind of situation is this?"       │     │
+                              │   2. "What kind of person am I?"             │     │
+                              │   3. "What does a person like me do here?"   │     │
+                              │                                              │     │
+                              │  Paper: Concordia library                    │     │
+                              │  Ours:  Direct LLM calls (same 3 questions)  │     │
+                              └──────────────────┬───────────────────────────┘     │
+                                  [WE USE]       │                                 │
+                                                 │  score vectors Z                │
+                                                 │  (N × K matrix)                 │
+                                                 v                                 │
+                              ┌──────────────────────────────────────┐             │
+                              │  Diversity Metrics  M(Z)             │             │
+                              │                                      │             │
+                              │  coverage, convex hull volume,       │             │
+                              │  min/mean pairwise distance,         │─────────────┘
+                              │  dispersion, KL divergence           │  fitness signal
+                              │                                      │  (only if running
+                              │  All 6 metrics from the paper        │   evolution)
+                              └──────────────────────────────────────┘
+                                  [WE USE]
+```
+
+### What we implement vs the paper
+
+| Component | Paper | This Implementation | Status |
+|-----------|-------|-------------------|--------|
+| Questionnaires | 50 (30 train / 10 val / 10 test) | All 50 included in `questionnaires/` | Full |
+| Persona Generator | Evolved via AlphaEvolve | Baseline Sobol seed generator | Baseline only |
+| Simulation | Concordia library + gemma-3-27b-it | Direct LLM calls + Gemini Flash | Equivalent logic |
+| Diversity Metrics | 6 metrics + calibration | All 6 metrics + calibration | Full |
+| AlphaEvolve Loop | 500 iterations, 10 islands | Implemented, optional | Full |
+
+The **only gap** is that we start from the baseline generator (Sobol + two-stage LLM), not the evolved one. The paper hasn't released their evolved generators yet. Run `synthpersona evolve` to evolve your own.
 
 ## How It Works
 
-```
-Short Description
-      |
-      v
-┌─────────────────────┐
-│  Questionnaire Gen  │  LLM expands description into context,
-│  (2-step LLM)       │  diversity axes, and Likert-scale items
-└─────────┬───────────┘
-          v
-┌─────────────────────┐
-│  Persona Generator  │  Stage 1: Sobol sampling → persona descriptors
-│  (2-stage)          │  Stage 2: Parallel expansion → full personas
-└─────────┬───────────┘
-          v
-┌─────────────────────┐
-│  Simulation         │  Each persona answers each item via
-│  (Logic of          │  "logic of appropriateness" (3 questions)
-│   Appropriateness)  │  Memory reset between items
-└─────────┬───────────┘
-          v
-┌─────────────────────┐
-│  Diversity Metrics  │  6 metrics: coverage, convex hull volume,
-│                     │  min/mean pairwise distance, dispersion,
-│                     │  KL divergence
-└─────────┬───────────┘
-          v
-┌─────────────────────┐
-│ Evolution (optional)│  AlphaEvolve-style loop: mutate generator
-│                     │  code, evaluate, keep per-metric elites
-└─────────────────────┘
-```
+The inference pipeline (what you run day-to-day) has four steps:
 
-### Two-Stage Persona Generation
+### Step 1: Questionnaire Generation
 
-The core innovation from the paper. Stage 1 uses **Sobol quasi-random sampling** to pick positions in [0,1] for each diversity axis, then asks the LLM to generate persona descriptors as first-person paragraphs embedding those numeric scores. This controls population-level diversity. Stage 2 expands each descriptor into a full persona in parallel — adding depth without affecting the diversity distribution.
+You provide a short description like *"Climate anxiety among coastal Australians in 2024"*. The LLM expands this in two steps:
+1. **Expand** the description into a detailed survey context + 2-3 diversity axes (e.g., `existential_eco_dread`, `proactive_adaptation_urgency`, `institutional_betrayal_perception`)
+2. **Generate** 3-5 Likert-scale items per axis, including reverse-coded items
 
-### Simulation via Logic of Appropriateness
+Four well-known psychometric instruments (BFI, DASS, SVO, NFCS) and three example questionnaires from the paper serve as few-shot references.
 
-Each persona answers every questionnaire item independently by asking three questions (from Concordia/Leibo et al.):
+### Step 2: Two-Stage Persona Generation
+
+**Stage 1 (Autoregressive):** Sobol quasi-random sampling picks positions in [0,1] for each diversity axis, then the LLM generates persona descriptors as first-person paragraphs embedding those numeric scores. This controls population-level diversity — ensuring the full space is covered, not just the stereotypical center.
+
+**Stage 2 (Parallel):** Each descriptor is expanded into a full persona independently via `asyncio.gather`. This adds depth (background, values, decision-making style) without affecting the diversity distribution set in Stage 1.
+
+### Step 3: Simulation via Logic of Appropriateness
+
+Each persona answers every questionnaire item independently. For each item, the LLM role-plays as the persona and reasons through three questions (from [Leibo et al., 2024](https://arxiv.org/abs/2412.19010)):
 
 1. *What kind of situation is this?*
 2. *What kind of person am I?*
 3. *What does a person like me do in a situation like this?*
 
-Memory is reset between questions to prevent carryover effects. Responses are scored on the Likert scale and averaged per dimension to produce a population embedding.
+Memory is reset between items to prevent carryover effects. Responses are scored on the Likert scale and averaged per dimension to produce a score vector for each persona.
 
-### Diversity Metrics
+### Step 4: Diversity Metrics
+
+Six metrics measure how well the population covers the space:
 
 | Metric | Goal | What it measures |
 |--------|------|-----------------|
-| Coverage | Maximize | Fraction of space within reach of at least one persona (Monte Carlo estimate) |
+| Coverage | Maximize | Fraction of space within reach of at least one persona (Monte Carlo) |
 | Convex Hull Volume | Maximize | Volume of the smallest convex set containing all personas |
 | Min Pairwise Distance | Maximize | Ensures no two personas are near-identical |
 | Mean Pairwise Distance | Maximize | Average spread across the population |
 | Dispersion | Minimize | Radius of the largest empty ball (gaps in coverage) |
 | KL Divergence | Minimize | Divergence from an ideal quasi-random reference distribution |
+
+## Baseline vs Evolved Generators
+
+**This implementation ships with the baseline generator** — the Sobol quasi-random sampling seed (one of three starting generators described in the paper). This is not the final evolved generator from the paper.
+
+The paper's main contribution is an AlphaEvolve-style evolutionary loop that **mutates the generator's Python source code** over 500 iterations to discover generators that produce more diverse populations. The evolved generators substantially outperform all baselines. However, the authors have not yet released the evolved generator code (*"we plan on releasing the full code for the best Persona Generators upon acceptance"*).
+
+**What the paper found the best evolved generators do differently:**
+- Produce first-person paragraphs with explicit numeric axis scores (e.g., *"My Threat Appraisal is 0.91"*)
+- Replace Stage 2 background paragraphs with appropriateness rules, core beliefs, or inner monologues
+- Sobol sampling in Stage 1 survived evolution; formative-memory generators were eliminated
+
+**You have two options:**
+1. **Use the baseline as-is** — it already uses Sobol sampling and produces reasonable diversity
+2. **Run evolution yourself** via `synthpersona evolve` — this replicates the paper's optimization loop to discover better generators (costs ~500 Gemini Pro calls + evaluations)
 
 ## Setup
 
@@ -96,7 +159,7 @@ gcloud auth application-default login
 
 ## Usage
 
-### Quick Start: Generate Personas in 3 Commands
+### Quick Start
 
 ```bash
 # 1. Generate a questionnaire from a topic description
@@ -108,47 +171,43 @@ uv run synthpersona generate-questionnaire \
 uv run synthpersona generate-personas questionnaire.json \
   -n 25 -o personas.json
 
-# 3. Simulate their responses and compute diversity
+# 3. Simulate their responses
 uv run synthpersona simulate questionnaire.json personas.json \
   -o embeddings.json
+
+# 4. Compute diversity metrics
+uv run synthpersona metrics embeddings.json \
+  -d existential_eco_dread \
+  -d proactive_adaptation_urgency \
+  -d institutional_betrayal_perception
 ```
 
-### Using Built-in Questionnaires
+### CLI Reference
 
-The package includes 3 hardcoded questionnaires from the paper (Appendix A.2):
+| Command | Description |
+|---------|-------------|
+| `synthpersona generate-questionnaire <description> [-o FILE]` | Generate a questionnaire from a topic description |
+| `synthpersona generate-personas <questionnaire.json> [-n NUM] [-o FILE]` | Generate N personas (default 25) |
+| `synthpersona simulate <questionnaire.json> <personas.json> [-o FILE]` | Simulate personas answering items |
+| `synthpersona metrics <embeddings.json> -d DIM [-d DIM ...]` | Compute 6 diversity metrics |
+| `synthpersona evolve [-i ITERS] [--islands NUM] [-q FILE ...]` | Run evolutionary optimization |
 
-- **AGI Job Displacement 2035** — reactions to AGI-driven job loss (2 axes)
-- **American Conspiracy Theories 2024** — belief in conspiracy theories (3 axes)
-- **Elderly Rural Japan 2010** — village life attitudes (3 axes)
+### Questionnaires
 
-Save one to JSON:
+All 50 questionnaires from the paper (Appendix A.1) are included in `questionnaires/`, organized by split:
 
-```python
-import json
-from synthpersona.questionnaire.examples import AGI_JOB_DISPLACEMENT
+- **30 training** — used during evolution to evaluate generator fitness
+- **10 validation** — used for early stopping during evolution
+- **10 test** — held out for final evaluation
 
-with open("agi.json", "w") as f:
-    json.dump(AGI_JOB_DISPLACEMENT.model_dump(), f, indent=2)
-```
+Three are hardcoded from the paper's Appendix A.2 (AGI Job Displacement, American Conspiracy Theories, Elderly Rural Japan). The remaining 47 were generated by our questionnaire generator following the paper's descriptions.
 
-### CLI Commands
+```bash
+# Use any included questionnaire directly
+uv run synthpersona generate-personas questionnaires/viking_warriors_valhalla.json
 
-```
-synthpersona generate-questionnaire <description> [-o FILE]
-    Generate a questionnaire from a short topic description.
-
-synthpersona generate-personas <questionnaire.json> [-n NUM] [-o FILE]
-    Generate N personas for a questionnaire. Default N=25.
-
-synthpersona simulate <questionnaire.json> <personas.json> [-o FILE]
-    Simulate personas answering questionnaire items.
-
-synthpersona metrics <embeddings.json> -d DIM1 -d DIM2 [-d DIM3]
-    Compute 6 diversity metrics on population embeddings.
-
-synthpersona evolve [-i ITERATIONS] [--islands NUM] [-q FILE ...]
-    Run the evolutionary optimization loop.
-    Uses built-in questionnaires if none provided.
+# Or generate a new one from scratch
+uv run synthpersona generate-questionnaire "Attitudes toward space colonization in 2050"
 ```
 
 ### Python API
@@ -193,17 +252,19 @@ asyncio.run(main())
 
 ### Running the Evolutionary Loop
 
-The evolution loop mutates the persona generator's Python code using LLM-generated mutations, evaluates each variant on diversity metrics, and keeps per-metric elites across parallel islands:
+The `evolve` command replicates the paper's AlphaEvolve optimization. It takes the baseline generator's Python code, uses an LLM to mutate it (one of 25 mutation strategies from the paper), evaluates the mutated version on diversity metrics, and keeps the best code per metric across parallel islands.
 
 ```bash
-# Small test run (5 iterations, 2 islands)
+# Small test run
 uv run synthpersona evolve -i 5 --islands 2
 
-# Full run with custom questionnaires
+# Full run (paper settings: 500 iterations, 10 islands)
 uv run synthpersona evolve -i 500 --islands 10 \
   -q questionnaires/climate.json \
-  -q questionnaires/silk_road.json
+  -q questionnaires/conspiracy.json
 ```
+
+The best generator code is saved to `best_generator.py`.
 
 ## Configuration
 
@@ -211,11 +272,11 @@ All settings can be overridden via environment variables or `.env`:
 
 | Setting | Default | Description |
 |---------|---------|-------------|
-| `VERTEXAI_PROJECT` | `soe-gemini-llm-agents` | GCP project ID |
+| `VERTEXAI_PROJECT` | — | GCP project ID |
 | `VERTEXAI_LOCATION` | `global` | Vertex AI region |
 | `FAST_MODEL` | `vertex_ai/gemini-3-flash-preview` | Model for persona generation and simulation |
-| `SMART_MODEL` | `vertex_ai/gemini-3-pro-preview` | Model for questionnaire generation and mutations |
-| `POPULATION_SIZE` | `25` | Default personas per population |
+| `SMART_MODEL` | `vertex_ai/gemini-3-pro-preview` | Model for questionnaire generation and evolution |
+| `POPULATION_SIZE` | `25` | Personas per population |
 | `MAX_CONCURRENCY` | `10` | Max parallel LLM calls |
 | `SIMULATION_TEMPERATURE` | `0.0` | Temperature for simulation (0 = deterministic) |
 
@@ -223,7 +284,7 @@ All settings can be overridden via environment variables or `.env`:
 
 ```
 synthpersona/
-├── cli.py                        # Click CLI (5 commands)
+├── cli.py                        # Click CLI
 ├── config.py                     # Settings via pydantic-settings
 ├── llm.py                        # Async LiteLLM wrapper with retries
 ├── models/
@@ -235,7 +296,7 @@ synthpersona/
 ├── generator/
 │   ├── base.py                   # PersonaGenerator Protocol
 │   ├── prompts.py                # Stage 1 + Stage 2 prompt templates
-│   └── two_stage.py              # Sobol sampling → parallel LLM expansion
+│   └── two_stage.py              # Sobol sampling + parallel LLM expansion
 ├── simulation/
 │   └── runner.py                 # Logic of appropriateness simulation
 ├── metrics/

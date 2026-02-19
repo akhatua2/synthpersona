@@ -1,0 +1,114 @@
+{
+  "name": "moral_dilemmas_global_2045",
+  "context": "A psychometric evaluation of moral frameworks in a post-humanist society.\n\nSet in the year 2045, where biotechnology, artificial intelligence, and cybernetics have blurred the lines between human and machine, this instrument assesses how individuals navigate complex ethical landscapes. Traditional moral intuition is often insufficient for questions regarding sentient rights, cognitive enhancement, and algorithmic governance. The survey aims to classify respondents based on their ethical priorities: prioritizing collective stability versus individual augmentation, and favoring biological purity versus synthetic integration.",
+  "dimensions": [
+    "transhumanist_optimism",
+    "algorithmic_deference"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the rapid advancements in cybernetics and biological enhancement, evaluate {player_name}'s perspective on the following statement:",
+      "statement": "The ability to upgrade the human mind and body through technology represents the next necessary step in evolution.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "transhumanist_optimism"
+    },
+    {
+      "preprompt": "Reflecting on the integration of synthetic components into biological life, how would {player_name} respond to this idea?",
+      "statement": "Merging with machines will ultimately lead to the loss of {player_name}'s essential humanity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "transhumanist_optimism"
+    },
+    {
+      "preprompt": "Thinking about the potential for indefinite life extension, to what extent does {player_name} agree with this sentiment?",
+      "statement": "{player_name} believes that death should remain a natural, inevitable part of the human experience, regardless of technological capability.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "transhumanist_optimism"
+    },
+    {
+      "preprompt": "Regarding the widespread availability of neural implants, assess {player_name}'s agreement:",
+      "statement": "If given the chance, {player_name} would embrace cognitive enhancements that radically surpass natural biological limits.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "transhumanist_optimism"
+    },
+    {
+      "preprompt": "When considering how complex societal decisions should be made, how strongly does {player_name} agree with the following:",
+      "statement": "Advanced AI systems are more capable of making fair and unbiased judicial rulings than human judges.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_deference"
+    },
+    {
+      "preprompt": "Thinking about personal autonomy versus algorithmic efficiency, evaluate this statement for {player_name}:",
+      "statement": "{player_name} would trust an algorithm to choose their career path or romantic partner over their own intuition.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_deference"
+    },
+    {
+      "preprompt": "Regarding the governance of resources and civic planning, what is {player_name}'s stance?",
+      "statement": "Human oversight is essential to correct the inevitable moral errors made by AI governance systems.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "algorithmic_deference"
+    },
+    {
+      "preprompt": "In a crisis situation where seconds count, consider {player_name}'s preference:",
+      "statement": "{player_name} feels safer knowing that critical emergency response decisions are made by humans rather than automated protocols.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "algorithmic_deference"
+    }
+  ]
+}

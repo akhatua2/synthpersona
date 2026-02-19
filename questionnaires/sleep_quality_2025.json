@@ -1,0 +1,141 @@
+{
+  "name": "sleep_quality_2025",
+  "context": "A psychometric assessment of sleep behaviors and perceptions in the modern era. The year is 2025, a time characterized by hyper-connectivity, remote work blurring the lines between rest and productivity, and the prevalence of sleep-tracking technology. This survey investigates an individual's subjective sleep quality, their reliance on digital aids or distractions around bedtime, and their philosophical stance on whether rest is a biological necessity or a hindrance to productivity.",
+  "dimensions": [
+    "subjective_sleep_quality",
+    "digital_bedtime_dependence",
+    "productivity_orientation_of_rest"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on {player_name}'s typical night's rest, how would {player_name} rate their agreement with the following statement?",
+      "statement": "{player_name} generally wakes up feeling refreshed and ready for the day.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "subjective_sleep_quality"
+    },
+    {
+      "preprompt": "Considering {player_name}'s recent sleep history, please indicate agreement with the following:",
+      "statement": "Most nights, {player_name} struggles to fall asleep or stay asleep.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "subjective_sleep_quality"
+    },
+    {
+      "preprompt": "When thinking about overall energy levels, to what extent does {player_name} agree?",
+      "statement": "{player_name} is satisfied with the amount of sleep they get on a regular basis.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "subjective_sleep_quality"
+    },
+    {
+      "preprompt": "Considering {player_name}'s nightly routine involving screens and devices:",
+      "statement": "{player_name} finds it impossible to fall asleep without scrolling through a phone or tablet first.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "digital_bedtime_dependence"
+    },
+    {
+      "preprompt": "Thinking about the environment in which {player_name} sleeps:",
+      "statement": "{player_name} actively keeps digital devices out of the bedroom to ensure a distraction-free environment.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "digital_bedtime_dependence"
+    },
+    {
+      "preprompt": "Regarding the use of technology to manage rest, how much does {player_name} agree?",
+      "statement": "{player_name} feels anxious if they cannot check their sleep-tracking data or notifications immediately upon waking.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "digital_bedtime_dependence"
+    },
+    {
+      "preprompt": "When evaluating the role of sleep in {player_name}'s life:",
+      "statement": "{player_name} views sleep primarily as a waste of time that could be spent achieving goals.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "productivity_orientation_of_rest"
+    },
+    {
+      "preprompt": "Considering how {player_name} balances work and recovery:",
+      "statement": "{player_name} believes that maximizing rest is the most important factor for long-term success.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "productivity_orientation_of_rest"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s attitude toward downtime:",
+      "statement": "{player_name} often feels guilty for sleeping more than the absolute minimum required to function.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "productivity_orientation_of_rest"
+    },
+    {
+      "preprompt": "Regarding the 'hustle culture' of 2025, to what extent does {player_name} agree?",
+      "statement": "If science allowed it, {player_name} would choose to eliminate the need for sleep entirely to be more productive.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "productivity_orientation_of_rest"
+    }
+  ]
+}

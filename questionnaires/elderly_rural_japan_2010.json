@@ -1,0 +1,141 @@
+{
+  "name": "elderly_rural_japan_2010",
+  "context": "Questionnaire on rural Japanese village life in 2010.\n\nA survey of elderly residents in a rural Japanese village in 2010, exploring their feelings about community, technology adoption, and traditional values.",
+  "dimensions": [
+    "community_cohesion",
+    "technology_adoption",
+    "adherence_to_tradition"
+  ],
+  "questions": [
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} feels a strong sense of belonging to the village community.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_cohesion"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} believes that most people in this village can be trusted.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_cohesion"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} often feels lonely or isolated from others in the village.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "community_cohesion"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} believes that if someone in the village needed help, many people would come to their aid.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_cohesion"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} is interested in learning how to use new technologies like a mobile phone or the internet.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technology_adoption"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} thinks that new technologies like computers make life unnecessarily complicated.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "technology_adoption"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} believes the village would benefit from having better access to modern technology.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technology_adoption"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "For {player_name}, it is very important to pass down the village's traditions to the younger generation.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adherence_to_tradition"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} believes the old ways of doing things are often the best.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adherence_to_tradition"
+    },
+    {
+      "preprompt": "An interviewer asks {player_name} how much they agree or disagree with the following statement:",
+      "statement": "{player_name} feels that the village's traditional festivals and ceremonies are less important than they used to be.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "adherence_to_tradition"
+    }
+  ]
+}

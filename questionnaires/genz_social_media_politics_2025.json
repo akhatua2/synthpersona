@@ -1,0 +1,114 @@
+{
+  "name": "genz_social_media_politics_2025",
+  "context": "A psychometric study of Generation Z's political behavior on social platforms in the year 2025. This instrument examines how digital natives translate online discourse into real-world political action in a highly polarized, algorithmically curated information landscape. It specifically investigates the tension between performative posting (slacktivism) and tangible civic engagement, as well as the emotional toll of constant exposure to global crises.",
+  "dimensions": [
+    "performative_vs_substantive_engagement",
+    "algorithmic_fatalism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on {player_name}'s recent political activities online and offline, how strongly does {player_name} agree with the following:",
+      "statement": "Posting infographics on {player_name}'s social media story feels like the most effective way to create political change.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "performative_vs_substantive_engagement"
+    },
+    {
+      "preprompt": "Considering {player_name}'s involvement in civic life, please indicate agreement with this statement:",
+      "statement": "{player_name} rarely attends in-person protests or town halls because sharing hashtags feels sufficient.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "performative_vs_substantive_engagement"
+    },
+    {
+      "preprompt": "How does {player_name} view the relationship between online discourse and real-world impact?",
+      "statement": "{player_name} believes that real political change requires offline organizing rather than just online awareness campaigns.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "performative_vs_substantive_engagement"
+    },
+    {
+      "preprompt": "Think about {player_name}'s contributions to causes {player_name} cares about:",
+      "statement": "{player_name} spends significantly more time curating a politically aware online persona than volunteering for actual organizations.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "performative_vs_substantive_engagement"
+    },
+    {
+      "preprompt": "Regarding the way {player_name} interacts with social media algorithms, to what extent does {player_name} agree:",
+      "statement": "No matter what {player_name} posts or does, the algorithm ultimately decides which political narratives survive.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_fatalism"
+    },
+    {
+      "preprompt": "How much control does {player_name} feel they have over their information diet?",
+      "statement": "{player_name} feels helpless to stop the flood of polarizing content that appears on {player_name}'s feed.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_fatalism"
+    },
+    {
+      "preprompt": "Thinking about the power dynamics of digital platforms, does {player_name} agree with the following?",
+      "statement": "{player_name} is confident that individual users can still shape the political conversation despite algorithmic curation.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "algorithmic_fatalism"
+    },
+    {
+      "preprompt": "Considering the emotional impact of {player_name}'s social media usage:",
+      "statement": "{player_name} believes the inevitable result of being online is radicalization, and there is nothing {player_name} can do to prevent it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_fatalism"
+    }
+  ]
+}

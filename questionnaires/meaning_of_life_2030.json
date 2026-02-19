@@ -1,0 +1,128 @@
+{
+  "name": "meaning_of_life_2030",
+  "context": "A philosophical and psychological survey conducted in 2030 to understand evolving conceptions of meaning in a post-digital, climate-aware society. As traditional religious affiliation declines and technological integration deepens, this instrument seeks to identify how individuals construct purpose. It specifically examines whether people derive meaning primarily from internal self-actualization, external social contribution, or transcendent connection to nature and the cosmos.",
+  "dimensions": [
+    "self_actualization_focus",
+    "social_contribution_orientation",
+    "transcendent_connectedness"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on what gives {player_name}'s life a sense of purpose in this modern age, indicate agreement with the following:",
+      "statement": "True meaning is found when {player_name} focuses on optimizing their own potential and skills.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "self_actualization_focus"
+    },
+    {
+      "preprompt": "Considering {player_name}'s personal values regarding a meaningful life, evaluate this statement:",
+      "statement": "{player_name} believes that a life lived primarily for personal growth is inherently selfish and empty.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "self_actualization_focus"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s ultimate goals for happiness:",
+      "statement": "The most important project in {player_name}'s life is the construction of their own unique identity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "self_actualization_focus"
+    },
+    {
+      "preprompt": "When {player_name} considers what makes life worth living, how strongly do they agree with the following:",
+      "statement": "{player_name}'s sense of purpose comes almost entirely from helping others and improving society.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_contribution_orientation"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s interactions with the community:",
+      "statement": "Leaving a positive legacy for future generations is the primary driver of {player_name}'s actions.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_contribution_orientation"
+    },
+    {
+      "preprompt": "Considering {player_name}'s views on social responsibility:",
+      "statement": "{player_name} feels that prioritizing the needs of the collective over one's own desires is a waste of time.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "social_contribution_orientation"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s place in the universe, please rate the following:",
+      "statement": "{player_name} feels a profound spiritual connection to the Earth's ecosystems and the cosmos.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "transcendent_connectedness"
+    },
+    {
+      "preprompt": "When considering the natural world, to what extent does {player_name} agree:",
+      "statement": "The physical world is merely a resource to be used, rather than a sacred system to which {player_name} belongs.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "transcendent_connectedness"
+    },
+    {
+      "preprompt": "Reflecting on moments of awe and wonder {player_name} may have experienced:",
+      "statement": "{player_name} finds deep meaning in the realization that they are a small part of a vast, interconnected biosphere.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "transcendent_connectedness"
+    }
+  ]
+}

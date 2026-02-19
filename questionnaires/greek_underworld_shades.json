@@ -1,0 +1,141 @@
+{
+  "name": "greek_underworld_shades",
+  "context": "A structured interview protocol for the shades of the deceased residing in the Asphodel Meadows, Elysium, or Tartarus. This instrument is designed to measure the psychological state of spirits as they look back on their mortal existence from the perspective of eternity. It explores themes of regret over unfulfilled potential versus satisfaction with one's legacy, as well as the shade's current attachment to the world of the living versus their acceptance of their new subterranean reality.",
+  "dimensions": [
+    "nostalgic_attachment",
+    "legacy_satisfaction",
+    "underworld_acceptance"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the life {player_name} left behind, consider this sentiment regarding the world of the living:",
+      "statement": "{player_name} constantly yearns for the warmth of the sun and the taste of mortal food.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "nostalgic_attachment"
+    },
+    {
+      "preprompt": "As {player_name} watches the River Styx flow, how strongly do they identify with this thought:",
+      "statement": "The memories of {player_name}'s family and home feel distant and unimportant now.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "nostalgic_attachment"
+    },
+    {
+      "preprompt": "Thinking about the connections severed by death, how does {player_name} respond to this statement?",
+      "statement": "{player_name} would trade an eternity of peace just for one more day among the living.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "nostalgic_attachment"
+    },
+    {
+      "preprompt": "When {player_name} considers the mark they left on history, do they agree with the following:",
+      "statement": "{player_name} feels that their time on earth was wasted on trivial pursuits.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "legacy_satisfaction"
+    },
+    {
+      "preprompt": "Looking back at the sum of {player_name}'s deeds, to what extent does this statement ring true?",
+      "statement": "{player_name} is proud of the name and reputation they built while alive.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "legacy_satisfaction"
+    },
+    {
+      "preprompt": "Evaluating {player_name}'s mortal choices from an eternal perspective:",
+      "statement": "If {player_name} could live again, they would make the exact same choices.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "legacy_satisfaction"
+    },
+    {
+      "preprompt": "Considering {player_name}'s accomplishments, how does the following statement resonate?",
+      "statement": "{player_name} feels deep regret over the potential they never fulfilled.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "legacy_satisfaction"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s current existence within Hades' domain:",
+      "statement": "{player_name} has made peace with the silence and shadows of the Underworld.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "underworld_acceptance"
+    },
+    {
+      "preprompt": "As {player_name} walks the Asphodel Meadows (or elsewhere), how do they feel about their fate?",
+      "statement": "{player_name} feels that their placement in this part of the afterlife is unjust.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "underworld_acceptance"
+    },
+    {
+      "preprompt": "Contemplating the eternal nature of death, does {player_name} agree with this sentiment?",
+      "statement": "{player_name} finds comfort in the finality and order of the realm of the dead.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "underworld_acceptance"
+    }
+  ]
+}

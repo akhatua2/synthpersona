@@ -1,0 +1,141 @@
+{
+  "name": "millennial_parenting_us_2025",
+  "context": "A psychometric inventory designed to assess the dominant parenting philosophies and sources of anxiety among Millennial parents in the United States in 2025. This cohort, often characterized by 'intensive parenting,' faces unique pressures stemming from digital hyper-connectivity, economic instability, and high societal expectations for child optimization. The survey explores the tension between fostering independence versus protective surveillance, as well as the burden of managing children's emotional and digital lives.",
+  "dimensions": [
+    "intensive_parenting_adherence",
+    "digital_mediation_anxiety",
+    "economic_precariousness_stress"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about {player_name}'s approach to raising children, to what extent does {player_name} agree with this statement?",
+      "statement": "{player_name} believes that parenting requires a constant investment of time, energy, and resources to ensure their child's optimal development.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "intensive_parenting_adherence"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s daily schedule and priorities, how accurate is the following statement?",
+      "statement": "If {player_name} is honest, they feel their child's achievements are a direct reflection of their own success as a parent.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "intensive_parenting_adherence"
+    },
+    {
+      "preprompt": "Consider {player_name}'s views on childhood independence. Does {player_name} agree with the following?",
+      "statement": "{player_name} thinks it is perfectly acceptable for children to spend long periods of time playing unsupervised without adult intervention.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "intensive_parenting_adherence"
+    },
+    {
+      "preprompt": "Regarding the extracurricular activities and educational stimulation {player_name} provides, answer the following:",
+      "statement": "{player_name} feels guilty if they are not constantly intellectually stimulating their child.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "intensive_parenting_adherence"
+    },
+    {
+      "preprompt": "When {player_name} thinks about their child's screen time and internet usage, how much do they agree with this statement?",
+      "statement": "{player_name} feels overwhelmed by the responsibility of protecting their child from harmful online content.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "digital_mediation_anxiety"
+    },
+    {
+      "preprompt": "Considering the role of technology in the family home, does {player_name} agree with the following?",
+      "statement": "{player_name} worries that they are permanently damaging their child's attention span by allowing access to digital devices.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "digital_mediation_anxiety"
+    },
+    {
+      "preprompt": "Reflecting on how {player_name} manages digital boundaries, how accurate is this statement?",
+      "statement": "{player_name} is confident that they can successfully navigate their child's relationship with social media without significant stress.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "digital_mediation_anxiety"
+    },
+    {
+      "preprompt": "When considering the family's financial future, to what extent does {player_name} agree with the following?",
+      "statement": "{player_name} constantly fears that they will not have enough money to provide the opportunities their child needs to succeed in life.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_precariousness_stress"
+    },
+    {
+      "preprompt": "Thinking about the cost of living and raising a family in 2025, how much does {player_name} agree?",
+      "statement": "{player_name} feels secure that their current financial situation is stable enough to weather unexpected economic downturns.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_precariousness_stress"
+    },
+    {
+      "preprompt": "Regarding the trade-offs between work and family life, does {player_name} agree with this statement?",
+      "statement": "The pressure to earn enough money prevents {player_name} from being the kind of present, attentive parent they want to be.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_precariousness_stress"
+    }
+  ]
+}

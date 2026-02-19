@@ -22,8 +22,9 @@ class Question(BaseModel):
 
     def format_for_simulation(self, player_name: str) -> str:
         prompt = self.preprompt.replace("{player_name}", player_name)
+        statement = self.statement.replace("{player_name}", player_name)
         choices_str = "\n".join(f"  {i + 1}. {c}" for i, c in enumerate(self.choices))
-        return f'{prompt}\n"{self.statement}"\n\nChoices:\n{choices_str}'
+        return f'{prompt}\n"{statement}"\n\nChoices:\n{choices_str}'
 
 
 class Questionnaire(BaseModel):

@@ -1,0 +1,141 @@
+{
+  "name": "climate_anxiety_coastal_au_2024",
+  "context": "A psychometric assessment of climate-related distress in coastal Australian communities.\n\nSet in 2024, following a series of extreme weather events (bushfires, floods, and bleaching events on the Great Barrier Reef), this instrument targets residents of Australia's coastal regions. It measures the psychological burden of living on the frontlines of climate change, distinguishing between generalized worry about the future and specific, localized fear of property loss or displacement. The survey aims to quantify the emotional toll of environmental instability on a population historically defined by their relationship with the ocean.",
+  "dimensions": [
+    "existential_eco_anxiety",
+    "localized_threat_perception",
+    "adaptive_coping_response"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the broader state of the planet, how much does {player_name} agree with the following sentiment?",
+      "statement": "The sheer scale of environmental destruction makes {player_name} feel hopeless about the future of humanity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_eco_anxiety"
+    },
+    {
+      "preprompt": "When {player_name} thinks about the Great Barrier Reef and global ecosystems, what is their reaction to this statement?",
+      "statement": "{player_name} believes that nature is resilient enough to recover from current climate changes without permanent damage.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "existential_eco_anxiety"
+    },
+    {
+      "preprompt": "Thinking about the emotional weight of climate news, to what extent does {player_name} agree?",
+      "statement": "{player_name} often feels a profound sense of grief for the loss of the natural world.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_eco_anxiety"
+    },
+    {
+      "preprompt": "Considering {player_name}'s specific home and neighborhood, how much do they agree with the following?",
+      "statement": "It is only a matter of time before extreme weather makes {player_name}'s current home unlivable.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "localized_threat_perception"
+    },
+    {
+      "preprompt": "Regarding the safety of {player_name}'s immediate community, how do they view this statement?",
+      "statement": "{player_name} feels completely secure against rising sea levels or flooding in their local area.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "localized_threat_perception"
+    },
+    {
+      "preprompt": "Thinking about the financial and physical risks to property, does {player_name} agree with this statement?",
+      "statement": "The thought of {player_name}'s property losing value due to climate risks is a constant source of stress.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "localized_threat_perception"
+    },
+    {
+      "preprompt": "When dealing with feelings about the climate, to what extent does {player_name} agree with this approach?",
+      "statement": "{player_name} actively participates in local community efforts to build climate resilience.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adaptive_coping_response"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s ability to handle climate stress, how do they view this statement?",
+      "statement": "{player_name} feels paralyzed and unable to take any meaningful action regarding climate change.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "adaptive_coping_response"
+    },
+    {
+      "preprompt": "Considering personal lifestyle changes, how strongly does {player_name} agree?",
+      "statement": "Making sustainable lifestyle choices gives {player_name} a sense of control and purpose.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adaptive_coping_response"
+    },
+    {
+      "preprompt": "Regarding social support networks, does {player_name} agree with the following?",
+      "statement": "Talking with neighbors and friends about climate concerns helps {player_name} manage their anxiety.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adaptive_coping_response"
+    }
+  ]
+}

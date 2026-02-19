@@ -1,0 +1,141 @@
+{
+  "name": "silk_road_merchants_samarkand_750ad",
+  "context": "A psychometric profile of merchant attitudes in the Abbasid Caliphate era.\n\nSet in the bustling city of Samarkand circa 750 AD, this instrument surveys long-distance traders operating on the Silk Road. It investigates their risk tolerance regarding banditry and political instability, their openness to foreign cultures encountered during travel, and their prioritization of profit versus religious or ethical piety. The goal is to map the psychological landscape of the intermediaries connecting China, Persia, and the West.",
+  "dimensions": [
+    "cosmopolitan_openness",
+    "mercantile_risk_tolerance",
+    "piety_vs_profit_orientation"
+  ],
+  "questions": [
+    {
+      "preprompt": "As a merchant of Samarkand who frequently encounters strangers from distant lands, how much does {player_name} agree with the following sentiment?",
+      "statement": "{player_name} actively seeks out the company of Franks, Chinese, and Indians to learn their customs and languages.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "cosmopolitan_openness"
+    },
+    {
+      "preprompt": "Reflecting on the cultural exchange that occurs in the caravanserais, consider this statement about {player_name}'s views:",
+      "statement": "{player_name} believes that adopting foreign habits or eating strange foods corrupts one's character.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "cosmopolitan_openness"
+    },
+    {
+      "preprompt": "When trading silk and spices with those of different faiths, to what extent does {player_name} agree with this statement?",
+      "statement": "{player_name} finds wisdom in the traditions of the Buddhists and Zoroastrians encountered on the road.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "cosmopolitan_openness"
+    },
+    {
+      "preprompt": "Considering the dangerous routes through the Pamir Mountains and bandit-ridden steppes, assess {player_name}'s agreement with the following:",
+      "statement": "{player_name} would rather take a longer, safer route that guarantees a small profit than a shortcut that risks the entire caravan for great riches.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "mercantile_risk_tolerance"
+    },
+    {
+      "preprompt": "When presented with an investment opportunity in a high-stakes venture to Chang'an, how does {player_name} feel?",
+      "statement": "{player_name} feels exhilarated by the prospect of betting their fortune on a single, perilous expedition.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "mercantile_risk_tolerance"
+    },
+    {
+      "preprompt": "Thinking about the instability of the roads during this era of political change, consider this statement about {player_name}:",
+      "statement": "{player_name} accepts that losing goods to bandits or storms is simply the necessary price of doing business.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "mercantile_risk_tolerance"
+    },
+    {
+      "preprompt": "When balancing the books and considering the laws of the market, how does {player_name} view this principle?",
+      "statement": "If a transaction is highly profitable, {player_name} is willing to overlook minor ethical concerns regarding the source of the goods.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "piety_vs_profit_orientation"
+    },
+    {
+      "preprompt": "Reflecting on religious duties amidst the bustle of the bazaar, to what extent does {player_name} agree?",
+      "statement": "{player_name} would never delay the daily prayers, even if it meant losing a valuable customer.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "piety_vs_profit_orientation"
+    },
+    {
+      "preprompt": "Considering the accumulation of wealth versus spiritual standing, how does {player_name} react to this statement?",
+      "statement": "God's favor is best shown through financial success, so accumulating dinars is a form of worship for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "piety_vs_profit_orientation"
+    },
+    {
+      "preprompt": "When deciding how to distribute the caravan's earnings, consider {player_name}'s priority:",
+      "statement": "{player_name} ensures that zakat (alms) is paid fully and honestly before calculating personal profit.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "piety_vs_profit_orientation"
+    }
+  ]
+}

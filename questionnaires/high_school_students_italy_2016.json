@@ -1,0 +1,154 @@
+{
+  "name": "high_school_students_italy_2016",
+  "context": "A psychometric survey targeting Italian high school students (liceo, tecnico, professionale) in 2016. This was a period marked by slow economic recovery after the Eurozone crisis, high youth unemployment rates, and increasing discussions about migration within Europe. The instrument assesses students' optimism regarding their future careers, their trust in traditional Italian institutions versus European identity, and their willingness to emigrate for better opportunities.",
+  "dimensions": [
+    "economic_optimism_and_mobility",
+    "institutional_trust_vs_cynicism",
+    "european_vs_local_identity"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about {player_name}'s future job prospects after graduation, please indicate how much {player_name} agrees with the following:",
+      "statement": "{player_name} is confident that finding a stable, well-paying job in Italy will be easy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_optimism_and_mobility"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s career plans, rate agreement with this statement:",
+      "statement": "To have a successful career, {player_name} feels it is absolutely necessary to leave Italy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_optimism_and_mobility"
+    },
+    {
+      "preprompt": "Considering the current economic climate in 2016, how does {player_name} feel about the future?",
+      "statement": "{player_name} believes the Italian economy will significantly improve by the time they finish their studies.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_optimism_and_mobility"
+    },
+    {
+      "preprompt": "When {player_name} imagines their life five years from now, to what extent do they agree with the following:",
+      "statement": "{player_name} sees no real opportunities for professional growth within their home region.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_optimism_and_mobility"
+    },
+    {
+      "preprompt": "Regarding the government and public administration, indicate {player_name}'s level of agreement:",
+      "statement": "The Italian political system generally works in the best interest of young people like {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "institutional_trust_vs_cynicism"
+    },
+    {
+      "preprompt": "Thinking about how society is organized, does {player_name} agree with this sentiment?",
+      "statement": "{player_name} believes that success in Italy depends more on 'who you know' (raccomandazione) than on merit.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "institutional_trust_vs_cynicism"
+    },
+    {
+      "preprompt": "Considering traditional pillars of society like the school system and the Church, how does {player_name} respond?",
+      "statement": "{player_name} trusts that Italian institutions are capable of solving the country's current crises.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "institutional_trust_vs_cynicism"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s sense of belonging, rate agreement with the following:",
+      "statement": "{player_name} feels more like a citizen of Europe than a citizen of Italy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "european_vs_local_identity"
+    },
+    {
+      "preprompt": "Considering cultural heritage and identity, to what extent does {player_name} agree?",
+      "statement": "{player_name} believes that preserving local Italian traditions is more important than integrating into a wider European culture.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "european_vs_local_identity"
+    },
+    {
+      "preprompt": "Thinking about the European Union's influence, how does {player_name} react to this statement?",
+      "statement": "The European Union represents a positive force for {player_name}'s personal freedom and future.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "european_vs_local_identity"
+    },
+    {
+      "preprompt": "Regarding travel and borders, how strongly does {player_name} agree?",
+      "statement": "{player_name} feels that open borders within Europe threaten their local cultural identity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "european_vs_local_identity"
+    }
+  ]
+}

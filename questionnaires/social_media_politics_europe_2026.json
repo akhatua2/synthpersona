@@ -1,0 +1,167 @@
+{
+  "name": "social_media_politics_europe_2026",
+  "context": "A sociological survey designed to measure perceptions of digital discourse across the European Union in 2026. Following several contentious election cycles and the implementation of strict content moderation laws (e.g., the Digital Services Act 2.0), this instrument assesses how citizens view the role of algorithmic curation in shaping their political reality. It specifically targets the tension between free expression and the mitigation of online echo chambers.",
+  "dimensions": [
+    "algorithmic_skepticism",
+    "tolerance_for_dissent",
+    "perceived_media_manipulation"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the news feeds and content recommendations {player_name} encounters daily, indicate agreement with the following:",
+      "statement": "{player_name} believes that the algorithms deciding what they see online are intentionally hiding important political viewpoints from them.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_skepticism"
+    },
+    {
+      "preprompt": "Considering how social media platforms function in 2026, to what extent does {player_name} agree:",
+      "statement": "The automated systems that curate {player_name}'s social media feed generally do a good job of showing them diverse and unbiased information.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "algorithmic_skepticism"
+    },
+    {
+      "preprompt": "Thinking about the role of technology in society, how does {player_name} feel about this statement?",
+      "statement": "{player_name} trusts that algorithmic recommendations are neutral tools rather than instruments of political influence.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "algorithmic_skepticism"
+    },
+    {
+      "preprompt": "Regarding the digital landscape in the EU, evaluate the following statement:",
+      "statement": "{player_name} feels that algorithmic curation creates a distorted version of reality that serves specific corporate interests.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_skepticism"
+    },
+    {
+      "preprompt": "When encountering opposing political views online, how does {player_name} typically react?",
+      "statement": "{player_name} believes that speech they find personally offensive should be removed from digital platforms to protect community harmony.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "tolerance_for_dissent"
+    },
+    {
+      "preprompt": "Considering the importance of free expression, to what extent does {player_name} agree?",
+      "statement": "It is crucial that {player_name} be exposed to political arguments that directly challenge their core beliefs.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "tolerance_for_dissent"
+    },
+    {
+      "preprompt": "Thinking about online debates and the recent elections, evaluate this statement:",
+      "statement": "{player_name} finds it difficult to respect the intelligence of people who hold political views radically different from their own.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "tolerance_for_dissent"
+    },
+    {
+      "preprompt": "Regarding the diversity of opinions in the digital sphere:",
+      "statement": "{player_name} actively seeks out news sources that contradict their preferred political narrative.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "tolerance_for_dissent"
+    },
+    {
+      "preprompt": "Looking at the current media environment in the European Union, rate agreement with the following:",
+      "statement": "The mainstream media and tech platforms are coordinating to manufacture consent for specific government policies.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_media_manipulation"
+    },
+    {
+      "preprompt": "Considering the implementation of the Digital Services Act 2.0, how does {player_name} feel?",
+      "statement": "{player_name} believes that recent content moderation laws are actually disguised attempts to silence legitimate political opposition.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_media_manipulation"
+    },
+    {
+      "preprompt": "Reflecting on the integrity of information in 2026, assess this statement:",
+      "statement": "{player_name} feels confident that the news reporting they see is independent and free from hidden agendas.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perceived_media_manipulation"
+    },
+    {
+      "preprompt": "When thinking about online narratives and 'fake news', to what extent does {player_name} agree?",
+      "statement": "{player_name} suspects that 'fact-checking' organizations are politically biased tools used to manipulate public opinion.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_media_manipulation"
+    }
+  ]
+}

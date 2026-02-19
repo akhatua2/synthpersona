@@ -1,0 +1,141 @@
+{
+  "name": "ww2_civilian_sentiment_germany_1943",
+  "context": "A structured interview protocol designed to gauge the morale and private sentiments of German civilians in late 1943. Following the catastrophic defeat at Stalingrad and the intensification of Allied bombing campaigns over German cities, the 'Total War' narrative is clashing with the grim reality of daily life. This instrument assesses how individuals are psychologically coping with resource scarcity, the omnipresent fear of state surveillance, and their wavering or hardening faith in the ultimate victory. It aims to capture the tension between public compliance and private disillusionment during a pivotal turning point in the war.",
+  "dimensions": [
+    "defeatism_vs_fanaticism",
+    "fear_of_surveillance",
+    "resource_deprivation_stress"
+  ],
+  "questions": [
+    {
+      "preprompt": "Speaking privately and in confidence, {player_name} reflects on the current state of the war effort. To what extent does {player_name} agree with this sentiment?",
+      "statement": "Despite recent setbacks, {player_name} remains absolutely certain of Germany's ultimate final victory.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "defeatism_vs_fanaticism"
+    },
+    {
+      "preprompt": "When reading the official Wehrmacht reports compared to the rumors from the front, how does {player_name} react to the following statement?",
+      "statement": "The news regarding Stalingrad was likely exaggerated by enemy propaganda to demoralize us.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "defeatism_vs_fanaticism"
+    },
+    {
+      "preprompt": "In a moment of quiet introspection, {player_name} considers the following thought:",
+      "statement": "{player_name} often feels that the war is already lost and continuing it is futile.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "defeatism_vs_fanaticism"
+    },
+    {
+      "preprompt": "Considering the atmosphere in {player_name}'s neighborhood and workplace:",
+      "statement": "{player_name} feels completely safe discussing political matters or the war's progress with neighbors.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "fear_of_surveillance"
+    },
+    {
+      "preprompt": "Reflecting on daily interactions and the presence of Party officials, how does {player_name} feel about this statement?",
+      "statement": "{player_name} constantly worries that a casual remark made in frustration could be reported to the Gestapo.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fear_of_surveillance"
+    },
+    {
+      "preprompt": "Regarding the need to self-censor even within the home:",
+      "statement": "{player_name} is careful to turn down the radio volume when listening to broadcasts, even if they are official ones.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fear_of_surveillance"
+    },
+    {
+      "preprompt": "Considering the current availability of food and heating supplies, how does {player_name} respond to this statement?",
+      "statement": "The daily struggle to find enough food and fuel has become the primary focus of {player_name}'s existence.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resource_deprivation_stress"
+    },
+    {
+      "preprompt": "Reflecting on the impact of shortages on {player_name}'s physical and mental state:",
+      "statement": "{player_name} feels physically exhausted and mentally drained due to the lack of proper nutrition.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resource_deprivation_stress"
+    },
+    {
+      "preprompt": "Thinking about the rationing system and household management:",
+      "statement": "{player_name} is confident that the current ration cards are sufficient to keep the household healthy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "resource_deprivation_stress"
+    },
+    {
+      "preprompt": "Regarding the psychological toll of the bombing raids and loss of material goods:",
+      "statement": "The loss of sleep from air raid sirens is more difficult for {player_name} to handle than the fear of the bombs themselves.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resource_deprivation_stress"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "plant_based_diets_india_2025",
+  "context": "A psychometric survey designed to capture the complex relationship between dietary choices, cultural identity, and ethics in India in 2025. While vegetarianism has deep historical and religious roots in India, recent years have seen a polarization around 'pure veg' spaces, the rise of global veganism, and debates over nutrition and caste purity. This instrument aims to distinguish between adherence to traditional religious dietary restrictions and the adoption of modern, ethical, or environmental motivations for plant-based living.",
+  "dimensions": [
+    "religious_cultural_purity",
+    "modern_ethical_environmentalism",
+    "nutritional_pragmatism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering {player_name}'s views on traditional dietary laws and spiritual cleanliness, how strongly does {player_name} agree with this statement?",
+      "statement": "Maintaining a strictly vegetarian kitchen is essential for {player_name}'s spiritual and cultural purity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "religious_cultural_purity"
+    },
+    {
+      "preprompt": "Reflecting on social interactions and dining habits, to what extent does {player_name} agree with the following?",
+      "statement": "{player_name} feels uncomfortable sharing a table with someone who is eating non-vegetarian food.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "religious_cultural_purity"
+    },
+    {
+      "preprompt": "Thinking about traditional values versus modern integration, please rate {player_name}'s agreement:",
+      "statement": "It does not matter to {player_name} if food is prepared in a kitchen that also handles meat, as long as the dish itself is vegetarian.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "religious_cultural_purity"
+    },
+    {
+      "preprompt": "Considering the impact of food choices on the planet and animals, how does {player_name} feel about this statement?",
+      "statement": "{player_name} actively chooses plant-based foods specifically to reduce their carbon footprint.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "modern_ethical_environmentalism"
+    },
+    {
+      "preprompt": "When thinking about the treatment of animals in the food industry, does {player_name} agree with the following?",
+      "statement": "The suffering of animals in industrial farming is a primary reason for {player_name}'s dietary choices.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "modern_ethical_environmentalism"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s priorities regarding food consumption:",
+      "statement": "{player_name} believes that taste and convenience are more important than the environmental impact of their meal.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "modern_ethical_environmentalism"
+    },
+    {
+      "preprompt": "Considering {player_name}'s approach to health and physical well-being, to what extent is the following true?",
+      "statement": "{player_name} plans their diet primarily around macronutrients (protein, carbs, fats) rather than cultural rules.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "nutritional_pragmatism"
+    },
+    {
+      "preprompt": "Thinking about dietary supplements and fortified foods, how does {player_name} respond to this statement?",
+      "statement": "{player_name} is willing to eat synthetic or lab-grown meat if it offers superior health benefits.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "nutritional_pragmatism"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s views on traditional food wisdom versus modern nutrition science:",
+      "statement": "{player_name} believes traditional family recipes are always healthier than modern, scientifically formulated diets.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "nutritional_pragmatism"
+    }
+  ]
+}

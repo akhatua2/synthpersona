@@ -1,0 +1,154 @@
+{
+  "name": "gentrification_brooklyn_2022",
+  "context": "A psychometric survey designed to capture the complex attitudes of Brooklyn residents toward rapid neighborhood transformation in 2022. Amidst rising rents, changing demographics, and the influx of new businesses, this instrument explores the tension between economic development and community displacement. It aims to measure how residents perceive the trade-offs between improved amenities and the potential loss of cultural identity or housing security.",
+  "dimensions": [
+    "economic_optimism_vs_anxiety",
+    "cultural_preservation_vs_modernization",
+    "community_belonging"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about the recent financial changes in the neighborhood, to what extent does {player_name} agree with the following statement?",
+      "statement": "The new developments and businesses opening around here make {player_name} feel confident that the local economy is improving for everyone.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_optimism_vs_anxiety"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s personal financial security in Brooklyn, please rate agreement with this statement:",
+      "statement": "Rising property values and rents are a direct threat to {player_name}'s ability to stay in this neighborhood long-term.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_optimism_vs_anxiety"
+    },
+    {
+      "preprompt": "Considering the influx of wealth into the area, how does {player_name} react to this statement?",
+      "statement": "{player_name} worries constantly that the cost of living here will soon become unmanageable.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_optimism_vs_anxiety"
+    },
+    {
+      "preprompt": "Looking at the changing job market and local investments, does {player_name} agree with the following?",
+      "statement": "The investment pouring into Brooklyn creates exciting new financial opportunities for residents like {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_optimism_vs_anxiety"
+    },
+    {
+      "preprompt": "Considering the aesthetic and cultural shifts in the neighborhood, to what extent does {player_name} agree with the following statement?",
+      "statement": "{player_name} believes it is crucial to protect the historic architecture and old-school businesses that give this neighborhood its soul.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "cultural_preservation_vs_modernization"
+    },
+    {
+      "preprompt": "Thinking about the new luxury buildings and modern storefronts, rate {player_name}'s agreement:",
+      "statement": "The modernization of the neighborhood is a necessary step forward, even if it means losing some older traditions.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "cultural_preservation_vs_modernization"
+    },
+    {
+      "preprompt": "Reflecting on the changing demographics and vibe of the streets, does {player_name} agree with this sentiment?",
+      "statement": "{player_name} feels that the neighborhood is losing the unique cultural identity that made it special in the first place.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "cultural_preservation_vs_modernization"
+    },
+    {
+      "preprompt": "Regarding the balance between old and new, how strongly does {player_name} agree with the following?",
+      "statement": "{player_name} prefers the convenience and cleanliness of the new chain stores over the older, grimier local shops.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "cultural_preservation_vs_modernization"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s connection to neighbors, please rate agreement with the following statement:",
+      "statement": "Despite all the changes, {player_name} still feels a deep sense of connection to the people living on this block.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_belonging"
+    },
+    {
+      "preprompt": "Considering the social fabric of the area, to what extent does {player_name} agree?",
+      "statement": "{player_name} feels like a stranger in their own neighborhood because so many familiar faces have left.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "community_belonging"
+    },
+    {
+      "preprompt": "Reflecting on interactions with new residents, how does {player_name} feel about this statement?",
+      "statement": "The sense of community here is stronger than ever before.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "community_belonging"
+    }
+  ]
+}

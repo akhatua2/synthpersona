@@ -1,0 +1,128 @@
+{
+  "name": "viking_warriors_valhalla",
+  "context": "A cultural-psychological instrument designed to assess the belief systems of Norse warriors circa 800 AD. This survey explores the tension between fatalism and personal agency in the face of death, the social versus spiritual motivations for combat, and the specific interpretations of the afterlife. It aims to differentiate between warriors driven by social reputation (Drengskapr) versus those driven by zealous religious devotion to the Aesir.",
+  "dimensions": [
+    "fatalistic_acceptance",
+    "reputation_seeking_behavior",
+    "religious_zealotry"
+  ],
+  "questions": [
+    {
+      "preprompt": "As {player_name} prepares for the coming raid, they consider their destiny. To what extent does {player_name} agree with this sentiment?",
+      "statement": "The hour of {player_name}'s death was woven by the Norns at birth, and no action can change it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fatalistic_acceptance"
+    },
+    {
+      "preprompt": "Reflecting on the unpredictable nature of battle, how does {player_name} view their own survival?",
+      "statement": "{player_name} believes that skill and shield-work, not fate, determine whether a warrior lives or dies.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "fatalistic_acceptance"
+    },
+    {
+      "preprompt": "When facing an overwhelming enemy force, {player_name} feels:",
+      "statement": "There is a deep peace in knowing that whatever happens today is the will of the threads of fate.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fatalistic_acceptance"
+    },
+    {
+      "preprompt": "Thinking about what matters most after a battle concludes, how does {player_name} feel about the following?",
+      "statement": "It is better to die young with a name that is sung by skalds than to live to old age in obscurity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "reputation_seeking_behavior"
+    },
+    {
+      "preprompt": "When {player_name} acts bravely on the battlefield, what is the primary motivation?",
+      "statement": "{player_name} cares little for what the village or the Jarl thinks of their deeds.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "reputation_seeking_behavior"
+    },
+    {
+      "preprompt": "Considering the judgment of peers and future generations, {player_name} believes:",
+      "statement": "The most important treasure a warrior can gather is the respect of their shield-brothers.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "reputation_seeking_behavior"
+    },
+    {
+      "preprompt": "As the sacrifices are prepared for the bl\u00f3t, {player_name} reflects on their connection to the gods:",
+      "statement": "{player_name} fights primarily to please Odin and secure a seat in Valhalla.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "religious_zealotry"
+    },
+    {
+      "preprompt": "When observing the omens before a journey, how strictly does {player_name} interpret them?",
+      "statement": "The will of the Aesir is distant and has little impact on {player_name}'s daily choices.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "religious_zealotry"
+    },
+    {
+      "preprompt": "Considering the cost of devotion, to what extent does {player_name} agree with this statement?",
+      "statement": "{player_name} would gladly offer their own blood if it guaranteed the favor of Thor.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "religious_zealotry"
+    }
+  ]
+}

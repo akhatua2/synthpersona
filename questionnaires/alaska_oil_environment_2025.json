@@ -1,0 +1,114 @@
+{
+  "name": "alaska_oil_environment_2025",
+  "context": "A psychometric survey designed for Alaskan residents in 2025, amidst heated political debates over new drilling permits in protected Arctic zones. The instrument captures public sentiment on the trade-off between sustaining the state's oil-dependent economy and preserving its fragile ecosystems in the face of visible climate change impacts. It aims to segment the population based on their prioritization of immediate economic stability versus long-term ecological stewardship.",
+  "dimensions": [
+    "economic_priority_orientation",
+    "environmental_preservation_urgency"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the financial future of the state and {player_name}'s own livelihood, indicate agreement with the following statement:",
+      "statement": "Alaska's economy will collapse if we do not expand drilling operations immediately.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_priority_orientation"
+    },
+    {
+      "preprompt": "When reflecting on the benefits of the oil industry to the region, how does {player_name} view this statement?",
+      "statement": "The revenue generated from new oil permits is essential for funding {player_name}'s local schools and public services.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_priority_orientation"
+    },
+    {
+      "preprompt": "{player_name} is asked to weigh job security against other concerns. To what extent does {player_name} agree?",
+      "statement": "Protecting oil industry jobs should be the top priority for Alaskan policymakers right now.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_priority_orientation"
+    },
+    {
+      "preprompt": "Thinking about the balance between nature and industry, how does {player_name} respond to this statement?",
+      "statement": "Economic growth is less important than preserving Alaska's natural beauty.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_priority_orientation"
+    },
+    {
+      "preprompt": "Regarding the changes {player_name} may have witnessed in the local environment, please rate agreement with the following:",
+      "statement": "The risks posed by climate change to Alaska require immediate and drastic action to stop new drilling.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "environmental_preservation_urgency"
+    },
+    {
+      "preprompt": "When considering the legacy left for future generations of Alaskans, to what extent does {player_name} agree?",
+      "statement": "Protecting Arctic wildlife habitats is more critical than extracting more natural resources.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "environmental_preservation_urgency"
+    },
+    {
+      "preprompt": "Thinking about the visible impacts of global warming in the Arctic, how does {player_name} feel about this statement?",
+      "statement": "Alaska should lead the world in transitioning away from fossil fuels to protect the climate.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "environmental_preservation_urgency"
+    },
+    {
+      "preprompt": "{player_name} considers the regulations currently placed on industries. How much does {player_name} agree with this sentiment?",
+      "statement": "Environmental regulations on drilling are too strict and are hurting Alaskan families.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "environmental_preservation_urgency"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "health_tech_wearables_2030",
+  "context": "A psychometric instrument to assess public sentiment regarding ubiquitous health monitoring technology.\n\nThe year is 2030. Advanced biometric wearables have become cheap and ubiquitous, offering real-time tracking of everything from cortisol levels to early cancer markers, often shared directly with insurers and employers for 'perks.' This survey investigates individual comfort levels with this new era of radical transparency, specifically focusing on the tension between health optimization and personal privacy.",
+  "dimensions": [
+    "privacy_surveillance_anxiety",
+    "health_optimization_enthusiasm",
+    "social_comparison_pressure"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the current state of biometric data collection in 2030, indicate how much {player_name} agrees with the following:",
+      "statement": "The idea that {player_name}'s employer can track stress levels in real-time feels like a violation of basic human rights.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "privacy_surveillance_anxiety"
+    },
+    {
+      "preprompt": "Reflecting on the trade-offs of modern health technology, please rate {player_name}'s agreement:",
+      "statement": "{player_name} feels perfectly comfortable sharing intimate genetic markers with insurance companies if it lowers premiums.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "privacy_surveillance_anxiety"
+    },
+    {
+      "preprompt": "Regarding the constant stream of data from {player_name}'s wearable device:",
+      "statement": "{player_name} constantly worries about who exactly has access to the biometric history being recorded every second.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "privacy_surveillance_anxiety"
+    },
+    {
+      "preprompt": "Thinking about the benefits of 24/7 health monitoring:",
+      "statement": "The ability to detect diseases like cancer before symptoms appear makes any loss of privacy completely worth it for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "health_optimization_enthusiasm"
+    },
+    {
+      "preprompt": "Considering the advancements in personal biology tracking:",
+      "statement": "{player_name} finds the constant feedback on cortisol and nutrient levels to be more overwhelming than helpful.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "health_optimization_enthusiasm"
+    },
+    {
+      "preprompt": "When {player_name} considers the capabilities of the new 2030 health wearables:",
+      "statement": "{player_name} feels empowered by having a complete, data-driven dashboard of physical performance.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "health_optimization_enthusiasm"
+    },
+    {
+      "preprompt": "In a world where health metrics are often public or shared in social circles:",
+      "statement": "{player_name} feels inadequate when comparing their 'Bio-Score' to colleagues or friends.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_comparison_pressure"
+    },
+    {
+      "preprompt": "Thinking about how health data is used in social standing:",
+      "statement": "{player_name} is indifferent to how their physical vitality ranks against the national average.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "social_comparison_pressure"
+    },
+    {
+      "preprompt": "Regarding the Gamification of health metrics in the workplace:",
+      "statement": "{player_name} feels a strong pressure to optimize sleep and diet just to keep up with the 'high performers' in the office.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_comparison_pressure"
+    }
+  ]
+}

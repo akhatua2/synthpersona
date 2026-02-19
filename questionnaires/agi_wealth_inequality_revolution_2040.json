@@ -1,0 +1,141 @@
+{
+  "name": "agi_wealth_inequality_revolution_2040",
+  "context": "A psychometric battery designed to measure political radicalization and economic dissatisfaction in a post-labor world. By 2040, the economic dividends of Artificial General Intelligence have accrued almost exclusively to a small technocratic elite, while the majority of the global population relies on a minimal Universal Basic Income (UBI) that barely covers subsistence. This instrument assesses the intensity of resentment toward this wealth gap and the willingness of individuals to engage in extra-legal or violent revolutionary action to redistribute resources.",
+  "dimensions": [
+    "structural_resentment",
+    "insurrectionary_propensity",
+    "technocratic_trust"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the current economic system, how strongly does {player_name} identify with the following sentiment:",
+      "statement": "The immense wealth hoarded by the AGI-owning class is fundamentally stolen from ordinary people like {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "structural_resentment"
+    },
+    {
+      "preprompt": "Considering the distribution of resources in society today, to what extent does {player_name} agree:",
+      "statement": "The current Universal Basic Income system provides a dignified and fair standard of living for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "structural_resentment"
+    },
+    {
+      "preprompt": "Thinking about the gap between the elite and the general population, how does {player_name} view this statement:",
+      "statement": "It is morally repugnant that a few technocrats live in luxury while {player_name} struggles to survive on the basic allotment.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "structural_resentment"
+    },
+    {
+      "preprompt": "When thinking about political change, to what extent does {player_name} agree with the following:",
+      "statement": "Voting and peaceful protest are the only acceptable ways to improve {player_name}'s situation.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "insurrectionary_propensity"
+    },
+    {
+      "preprompt": "Given the lack of economic opportunity, how strongly does {player_name} agree:",
+      "statement": "If a violent revolution began tomorrow to seize the AGI data centers, {player_name} would join it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "insurrectionary_propensity"
+    },
+    {
+      "preprompt": "Assessing the need for drastic measures, how does {player_name} feel about this statement:",
+      "statement": "Destroying the property of the elite is a legitimate form of self-defense for people in {player_name}'s position.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "insurrectionary_propensity"
+    },
+    {
+      "preprompt": "Considering the motivations of those in power, to what extent does {player_name} agree:",
+      "statement": "The technocratic leaders genuinely have {player_name}'s best interests at heart when they make economic decisions.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technocratic_trust"
+    },
+    {
+      "preprompt": "Reflecting on the management of the AGI infrastructure, how does {player_name} view this statement:",
+      "statement": "{player_name} believes that the technocrats are purposefully keeping the population poor to maintain control.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "technocratic_trust"
+    },
+    {
+      "preprompt": "Thinking about the expertise of the ruling class, how strongly does {player_name} agree:",
+      "statement": "Society is too complex for ordinary people to manage; {player_name} is safer leaving governance to the experts and their algorithms.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technocratic_trust"
+    },
+    {
+      "preprompt": "When considering official government announcements, to what extent does {player_name} agree:",
+      "statement": "{player_name} trusts the data released by the central authority regarding resource allocation and scarcity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "technocratic_trust"
+    }
+  ]
+}

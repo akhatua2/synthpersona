@@ -1,0 +1,141 @@
+{
+  "name": "british_empire_attitudes_uk_1900",
+  "context": "A psychometric instrument designed to measure British public sentiment regarding the British Empire at the turn of the 20th century. The year is 1900, the height of the Victorian era, amidst the Second Boer War. This survey captures the prevailing ideologies of the time, ranging from fervent jingoism and belief in the 'civilizing mission' to more pragmatic concerns about the economic and moral costs of imperial expansion.",
+  "dimensions": [
+    "imperial_pride_and_jingoism",
+    "civilizing_mission_belief",
+    "economic_pragmatism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the current state of the nation and its territories, how would {player_name} respond to this assertion?",
+      "statement": "The expansion of the British Empire is the single greatest achievement in human history.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "imperial_pride_and_jingoism"
+    },
+    {
+      "preprompt": "Considering the ongoing conflicts in South Africa, to what extent does {player_name} agree with the following?",
+      "statement": "Britain's military might is the only thing standing between order and global chaos.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "imperial_pride_and_jingoism"
+    },
+    {
+      "preprompt": "When thinking about national identity, how does {player_name} feel about this statement?",
+      "statement": "{player_name} feels embarrassed by the aggressive nature of British foreign policy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "imperial_pride_and_jingoism"
+    },
+    {
+      "preprompt": "Regarding the moral obligations of the Empire, how much does {player_name} agree with this view?",
+      "statement": "It is the divine duty of the British people to bring civilization and Christianity to the 'darker' corners of the earth.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "civilizing_mission_belief"
+    },
+    {
+      "preprompt": "Considering the governance of the colonies, how would {player_name} rate their agreement with this statement?",
+      "statement": "Indigenous populations are better off under British rule than they would be governing themselves.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "civilizing_mission_belief"
+    },
+    {
+      "preprompt": "Reflecting on the impact of British culture abroad, does {player_name} agree with the following?",
+      "statement": "The imposition of British values on other cultures often does more harm than good.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "civilizing_mission_belief"
+    },
+    {
+      "preprompt": "When evaluating the financial aspects of the Empire, how does {player_name} view this statement?",
+      "statement": "The immense cost of maintaining distant colonies outweighs any trade benefits we receive.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_pragmatism"
+    },
+    {
+      "preprompt": "Considering the taxpayer's burden, to what extent does {player_name} agree with the following?",
+      "statement": "We should only maintain colonies that turn a profit for the British treasury.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_pragmatism"
+    },
+    {
+      "preprompt": "Looking at the trade networks of the Empire, how strongly does {player_name} agree with this?",
+      "statement": "Without our imperial possessions, the British economy would surely collapse.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_pragmatism"
+    },
+    {
+      "preprompt": "Reflecting on the domestic cost of war, how would {player_name} respond to this statement?",
+      "statement": "Spending money on foreign wars like the one in South Africa is a waste of resources that should be spent at home.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_pragmatism"
+    }
+  ]
+}

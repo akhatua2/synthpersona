@@ -1,0 +1,154 @@
+{
+  "name": "ancient_egypt_akhenaten_reforms_1340bc",
+  "context": "A structured interview protocol designed to gauge the hidden sentiments of Egyptian citizens during the reign of Pharaoh Akhenaten (c. 1353\u20131336 BC). The survey context captures a moment of radical theological upheaval, where the traditional pantheon of gods (especially Amun) has been proscribed in favor of the sole worship of the sun-disk, the Aten. This instrument seeks to measure the tension between public compliance with the Pharaoh's decrees and private adherence to ancestral traditions, as well as perceptions of the new capital, Akhetaten.",
+  "dimensions": [
+    "fidelity_to_traditional_gods",
+    "acceptance_of_atenist_ideology",
+    "trust_in_pharaonic_authority"
+  ],
+  "questions": [
+    {
+      "preprompt": "In the quiet of {player_name}'s own home, away from the eyes of the Pharaoh's guards, how would {player_name} respond to the following statement?",
+      "statement": "The old temples of Amun, now closed and silent, still hold the true power of Egypt.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fidelity_to_traditional_gods"
+    },
+    {
+      "preprompt": "Reflecting on the rituals of their ancestors, to what extent does {player_name} agree with this sentiment?",
+      "statement": "It is foolish to pray to statues of Osiris or Thoth when the living sun is right above us.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "fidelity_to_traditional_gods"
+    },
+    {
+      "preprompt": "Consider {player_name}'s deepest spiritual needs. How much does {player_name} agree?",
+      "statement": "Without the many gods to guide the dead through the Duat, {player_name}'s soul will be lost forever.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fidelity_to_traditional_gods"
+    },
+    {
+      "preprompt": "Thinking about the hidden shrines some still keep, how does {player_name} feel about this statement?",
+      "statement": "{player_name} secretly makes offerings to the hidden gods to ensure the harvest is bountiful.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fidelity_to_traditional_gods"
+    },
+    {
+      "preprompt": "Gazing up at the sun-disk during the midday heat, how strongly does {player_name} agree with the new teachings?",
+      "statement": "The Aten is the sole creator of life, and no other divinity exists beside It.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "acceptance_of_atenist_ideology"
+    },
+    {
+      "preprompt": "Considering the new capital city of Akhetaten, how does {player_name} view the changes?",
+      "statement": "The worship of the sun-disk feels cold and distant compared to the warmth of the old festivals.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "acceptance_of_atenist_ideology"
+    },
+    {
+      "preprompt": "When hearing the Great Hymn to the Aten recited, what is {player_name}'s reaction?",
+      "statement": "{player_name} feels a genuine spiritual awakening when contemplating the light of the Aten.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "acceptance_of_atenist_ideology"
+    },
+    {
+      "preprompt": "Regarding the Pharaoh's vision for Egypt, to what extent does {player_name} agree?",
+      "statement": "Akhenaten is the living spirit of the Aten on earth, and his word is divine law.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "trust_in_pharaonic_authority"
+    },
+    {
+      "preprompt": "Thinking about the rapid construction of the new city and the taxes required, how does {player_name} feel?",
+      "statement": "The Pharaoh's obsession with his new capital is leading Egypt to ruin and neglect.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "trust_in_pharaonic_authority"
+    },
+    {
+      "preprompt": "Considering the banishment of the priests of Amun, does {player_name} support the Pharaoh's decision?",
+      "statement": "{player_name} trusts that the Pharaoh knows what is best for the spiritual health of the kingdom.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "trust_in_pharaonic_authority"
+    },
+    {
+      "preprompt": "When discussing the royal family with neighbors, how guarded is {player_name}?",
+      "statement": "{player_name} believes the Pharaoh has abandoned the protection of Egypt's borders to focus on his poetry.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "trust_in_pharaonic_authority"
+    }
+  ]
+}

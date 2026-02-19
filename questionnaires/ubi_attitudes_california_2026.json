@@ -1,0 +1,141 @@
+{
+  "name": "ubi_attitudes_california_2026",
+  "context": "A psychometric survey evaluating public sentiment regarding Universal Basic Income (UBI) proposals in California. Set in 2026, amid rising automation, housing costs, and income inequality, the state legislature is debating a permanent statewide dividend funded by tech sector taxation. This instrument is designed to measure how citizens weigh the economic security provided by UBI against concerns about work ethic, government dependency, and fiscal feasibility. It targets a diverse demographic across the state to capture ideological and pragmatic splits on wealth redistribution.",
+  "dimensions": [
+    "economic_security_optimism",
+    "work_ethic_concerns",
+    "fiscal_skepticism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the proposed statewide dividend, how strongly does {player_name} agree with the following:",
+      "statement": "A guaranteed basic income would finally give {player_name} the stability needed to pursue meaningful life goals without constant financial stress.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_security_optimism"
+    },
+    {
+      "preprompt": "Reflecting on California's current economic climate, what is {player_name}'s view on this statement:",
+      "statement": "Implementing UBI is the only realistic way to prevent mass poverty as automation replaces jobs.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_security_optimism"
+    },
+    {
+      "preprompt": "When thinking about the financial future of Californian families, to what extent does {player_name} agree:",
+      "statement": "Even with a basic income, most families would likely still struggle to keep a roof over their heads.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_security_optimism"
+    },
+    {
+      "preprompt": "Regarding the impact of 'free money' on society, how does {player_name} feel about this statement:",
+      "statement": "If everyone receives a check regardless of employment, people will lose their motivation to work hard and contribute to society.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "work_ethic_concerns"
+    },
+    {
+      "preprompt": "Considering human nature and employment, to what extent does {player_name} agree:",
+      "statement": "Receiving a basic income would empower people to take risks, start businesses, or find better jobs, rather than making them lazy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "work_ethic_concerns"
+    },
+    {
+      "preprompt": "Thinking about the relationship between income and effort, does {player_name} agree with the following:",
+      "statement": "A society where income is decoupled from labor will inevitably decline into dependency and stagnation.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "work_ethic_concerns"
+    },
+    {
+      "preprompt": "Looking at the state budget and taxes, how does {player_name} react to this statement:",
+      "statement": "Taxing the tech sector to fund UBI will simply cause those companies to leave California, bankrupting the state.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fiscal_skepticism"
+    },
+    {
+      "preprompt": "Considering the administrative cost of such a large program, to what extent does {player_name} agree:",
+      "statement": "The government is capable of managing a massive wealth redistribution program without significant waste or fraud.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "fiscal_skepticism"
+    },
+    {
+      "preprompt": "When evaluating the long-term viability of the proposal, does {player_name} agree:",
+      "statement": "The math behind this UBI proposal simply doesn't add up; it is an unsustainable fantasy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fiscal_skepticism"
+    },
+    {
+      "preprompt": "Reflecting on inflation concerns, how strongly does {player_name} agree:",
+      "statement": "Injecting this much cash into the economy will drive up the cost of rent and goods, canceling out any benefits of the dividend.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fiscal_skepticism"
+    }
+  ]
+}

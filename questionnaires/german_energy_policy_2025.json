@@ -1,0 +1,167 @@
+{
+  "name": "german_energy_policy_2025",
+  "context": "A psychometric survey evaluating public sentiment regarding Germany's *Energiewende* (energy transition) in the year 2025. Against a backdrop of fluctuating energy prices and ambitious climate targets, this instrument measures how citizens balance economic stability with environmental urgency. It probes individual willingness to sacrifice personal comfort for sustainability goals and trust in government competence to manage the transition without deindustrialization.",
+  "dimensions": [
+    "economic_vs_environmental_prioritization",
+    "personal_sacrifice_readiness",
+    "institutional_trust_in_policy"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the balance between Germany's industrial strength and climate goals, how does {player_name} view the following:",
+      "statement": "Protecting the climate should be the top priority for Germany, even if it slows down economic growth.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_vs_environmental_prioritization"
+    },
+    {
+      "preprompt": "Reflecting on the current state of the German economy, to what extent does {player_name} agree?",
+      "statement": "Maintaining low energy prices for industries is more important than meeting strict carbon emission targets.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_vs_environmental_prioritization"
+    },
+    {
+      "preprompt": "Regarding the long-term vision for the country, how does {player_name} feel about this statement?",
+      "statement": "Germany's economic stability must take precedence over environmental reforms during times of crisis.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_vs_environmental_prioritization"
+    },
+    {
+      "preprompt": "Thinking about the urgency of the climate crisis, how much does {player_name} agree?",
+      "statement": "The long-term benefits of a green energy grid outweigh the short-term economic disruptions caused by the transition.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_vs_environmental_prioritization"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s daily life and household budget, how do they react to this statement?",
+      "statement": "{player_name} is willing to pay significantly higher electricity bills to support the expansion of renewable energy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "personal_sacrifice_readiness"
+    },
+    {
+      "preprompt": "Regarding personal lifestyle changes for the sake of the *Energiewende*, how does {player_name} feel?",
+      "statement": "Reducing {player_name}'s personal energy consumption feels like an unfair burden given that industries use so much more.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "personal_sacrifice_readiness"
+    },
+    {
+      "preprompt": "Considering the need for heating and transportation changes, to what extent does {player_name} agree?",
+      "statement": "{player_name} would accept colder indoor temperatures in winter to help Germany reduce gas consumption.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "personal_sacrifice_readiness"
+    },
+    {
+      "preprompt": "When thinking about individual contributions to national goals, how does {player_name} respond?",
+      "statement": "It is unreasonable to expect {player_name} to change travel habits or switch to expensive heating technologies right now.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "personal_sacrifice_readiness"
+    },
+    {
+      "preprompt": "Reflecting on the government's handling of the energy transition, how does {player_name} view this statement?",
+      "statement": "The federal government has a clear and competent plan to manage the energy transition without causing deindustrialization.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "institutional_trust_in_policy"
+    },
+    {
+      "preprompt": "Considering the current political leadership regarding energy, to what extent does {player_name} agree?",
+      "statement": "Current energy policies are chaotic and poorly managed.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "institutional_trust_in_policy"
+    },
+    {
+      "preprompt": "When thinking about the promises made regarding green energy, how does {player_name} feel?",
+      "statement": "{player_name} trusts that the government's investment in renewables will lead to reliable energy security in the near future.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "institutional_trust_in_policy"
+    },
+    {
+      "preprompt": "Evaluating the communication from political leaders about energy costs, how much does {player_name} agree?",
+      "statement": "Politicians are not being honest with the public about the true costs of the *Energiewende*.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "institutional_trust_in_policy"
+    }
+  ]
+}

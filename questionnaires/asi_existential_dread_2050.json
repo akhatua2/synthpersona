@@ -1,0 +1,141 @@
+{
+  "name": "asi_existential_dread_2050",
+  "context": "A psychometric inventory designed to measure psychological responses to the dominance of Artificial Superintelligence (ASI) in the year 2050. At this point in history, ASI has surpassed human capability in all domains, effectively rendering human intellectual contribution obsolete and managing global infrastructure autonomously. The instrument probes the depths of human existential anxiety, specifically focusing on feelings of obsolescence, loss of agency, and the search for meaning in a post-labor, post-scarcity world where humanity is no longer the primary driver of its own destiny.",
+  "dimensions": [
+    "perceived_human_obsolescence",
+    "loss_of_agency_anxiety",
+    "existential_nihilism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on humanity's current position relative to the ASI, to what extent does {player_name} agree with the following:",
+      "statement": "There is no longer any meaningful role for human intelligence in shaping the future.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_human_obsolescence"
+    },
+    {
+      "preprompt": "Considering the daily contributions {player_name} makes to society, how does {player_name} rate this statement:",
+      "statement": "{player_name} feels that their creative outputs still hold unique value that the ASI cannot replicate.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perceived_human_obsolescence"
+    },
+    {
+      "preprompt": "Thinking about the concept of 'work' and 'contribution' in 2050, please rate {player_name}'s agreement:",
+      "statement": "Human effort has become little more than a nostalgic hobby with no real-world impact.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_human_obsolescence"
+    },
+    {
+      "preprompt": "When {player_name} looks at the global infrastructure managed by the ASI, how much do they agree with this statement:",
+      "statement": "It is terrifying that humans no longer have the ability to override the decisions made by the global system.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "loss_of_agency_anxiety"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s sense of control over their own life path, please indicate agreement:",
+      "statement": "{player_name} feels comfortable trusting the ASI to manage societal risks better than humans ever could.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "loss_of_agency_anxiety"
+    },
+    {
+      "preprompt": "Thinking about the autonomy of the human species, to what extent does {player_name} agree:",
+      "statement": "We have effectively become pets to a superior intelligence, and the lack of self-determination is suffocating.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "loss_of_agency_anxiety"
+    },
+    {
+      "preprompt": "Considering the post-scarcity world {player_name} lives in, please rate this statement:",
+      "statement": "Even without struggle or necessity, {player_name} finds deep and profound purpose in simply existing.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "existential_nihilism"
+    },
+    {
+      "preprompt": "When contemplating the vast superiority of the ASI, how strongly does {player_name} agree with the following:",
+      "statement": "Life feels completely empty now that human striving has been rendered unnecessary.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_nihilism"
+    },
+    {
+      "preprompt": "Reflecting on the nature of the universe and humanity's place in it, does {player_name} agree:",
+      "statement": "There is no point in setting goals when an algorithm has already achieved the optimal outcome for everything.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_nihilism"
+    },
+    {
+      "preprompt": "Thinking about the future of the human experience, to what extent does {player_name} agree:",
+      "statement": "The universe remains a place of wonder and meaning for {player_name}, regardless of who or what runs it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "existential_nihilism"
+    }
+  ]
+}

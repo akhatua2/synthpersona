@@ -1,0 +1,154 @@
+{
+  "name": "generalized_trust_in_the_salem_witch_trials_1692",
+  "context": "A psychometric instrument designed to assess the social fabric of Salem Village in 1692 amidst the unfolding witch trials. This survey captures the intense paranoia, religious fervor, and breakdown of communal trust that characterized the period. It aims to measure how individuals navigated the precarious balance between accusatory zeal, defensive skepticism, and strict adherence to Puritan theology during a crisis of faith and law.",
+  "dimensions": [
+    "accusatory_zeal",
+    "theological_orthodoxy",
+    "social_suspicion"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the ongoing trials and the danger of the devil's work in the village, to what extent does {player_name} agree with this statement:",
+      "statement": "It is better to accuse ten innocent souls than to let one witch go undetected in our midst.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "accusatory_zeal"
+    },
+    {
+      "preprompt": "Reflecting on the recent testimonies given in the meeting house, how does {player_name} feel about this assertion?",
+      "statement": "Those who cry out against their neighbors are doing God's holy work and must be believed without question.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "accusatory_zeal"
+    },
+    {
+      "preprompt": "When discussing the accused with other villagers, how would {player_name} respond to the following idea?",
+      "statement": "{player_name} believes that the courts are being far too hasty and reckless in accepting spectral evidence against neighbors.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "accusatory_zeal"
+    },
+    {
+      "preprompt": "Thinking on the duty of a good Christian to root out evil, does {player_name} agree with this sentiment?",
+      "statement": "Silence in the face of witchcraft is as sinful as the practice itself; one must speak out against suspicious behavior immediately.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "accusatory_zeal"
+    },
+    {
+      "preprompt": "Regarding the teachings of the ministers and the Holy Scripture, to what extent does {player_name} hold this belief?",
+      "statement": "Misfortune, sickness, and crop failure are direct punishments from God for the sins of the community.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "theological_orthodoxy"
+    },
+    {
+      "preprompt": "When reflecting on the nature of the invisible world, how strongly does {player_name} agree with this statement?",
+      "statement": "The Devil cannot take the shape of a person without that person's express consent and covenant.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "theological_orthodoxy"
+    },
+    {
+      "preprompt": "Considering the strict expectations of Puritan life, does {player_name} agree with the following?",
+      "statement": "{player_name} finds that the Sabbath sermons are often too harsh and focused excessively on damnation rather than grace.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "theological_orthodoxy"
+    },
+    {
+      "preprompt": "Looking at the faces of neighbors and friends in Salem Village, how much does {player_name} resonate with this feeling?",
+      "statement": "{player_name} can no longer trust even close friends, fearing they may have signed the Devil's book.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_suspicion"
+    },
+    {
+      "preprompt": "When walking through the village or attending meetings, does {player_name} agree with this observation?",
+      "statement": "Whispers behind closed doors are likely plots against {player_name}'s family or reputation.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_suspicion"
+    },
+    {
+      "preprompt": "Regarding the unity of Salem Village during these dark times, to what extent does {player_name} agree?",
+      "statement": "Despite the trials, {player_name} feels safe and confident in the goodwill of the community.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "social_suspicion"
+    },
+    {
+      "preprompt": "Thinking about the private lives of others in the village, how strongly does {player_name} agree?",
+      "statement": "Those who keep to themselves and avoid public gatherings are hiding dark secrets.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_suspicion"
+    }
+  ]
+}

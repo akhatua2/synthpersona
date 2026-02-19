@@ -1,0 +1,128 @@
+{
+  "name": "romans_reactions_to_murder_of_julius_caesar_44_bc",
+  "context": "A structured opinion survey capturing the immediate political sentiment of Roman citizens in the days following the Ides of March, 44 BC. This instrument is designed to measure the polarization of the populace between those who view the assassination as a necessary act of liberation against tyranny and those who view it as a destabilizing betrayal of a populist hero. It probes deeper sociopolitical attitudes regarding the trade-off between republican liberty and authoritarian stability, as well as the respondent's emotional response to the potential for renewed civil war.",
+  "dimensions": [
+    "support_for_tyrannicide",
+    "fear_of_civil_unrest",
+    "loyalty_to_populist_reforms"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the recent events in the Senate house, how strongly does {player_name} align with the following sentiment regarding the fate of Julius Caesar?",
+      "statement": "The removal of Caesar was a necessary act to preserve the freedom of the Republic against a would-be king.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "support_for_tyrannicide"
+    },
+    {
+      "preprompt": "Reflecting on the nature of leadership and the recent assassination, to what extent does {player_name} agree with this statement?",
+      "statement": "Brutus and Cassius should be punished as traitors for betraying their benefactor.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "support_for_tyrannicide"
+    },
+    {
+      "preprompt": "When discussing the justification for the Ides of March, how much does {player_name} agree with the following?",
+      "statement": "No single man, no matter how accomplished, should hold power above the laws of Rome.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "support_for_tyrannicide"
+    },
+    {
+      "preprompt": "Looking at the streets of Rome today, how does {player_name} feel about the immediate future?",
+      "statement": "The death of Caesar will lead to chaos and bloodshed worse than his rule ever was.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fear_of_civil_unrest"
+    },
+    {
+      "preprompt": "Considering the stability of the city, to what extent does {player_name} agree with this outlook?",
+      "statement": "{player_name} is confident that the Senate can restore order peacefully without the need for legions.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "fear_of_civil_unrest"
+    },
+    {
+      "preprompt": "When thinking about {player_name}'s family's safety in the coming months, to what degree do they agree with the following?",
+      "statement": "A renewed civil war between the factions is inevitable and terrifying.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "fear_of_civil_unrest"
+    },
+    {
+      "preprompt": "Reflecting on the policies enacted before the Ides of March, how does {player_name} view the legacy of the fallen dictator?",
+      "statement": "Caesar's land reforms and grain distributions were essential for the survival of the common people.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "loyalty_to_populist_reforms"
+    },
+    {
+      "preprompt": "Considering the balance of power between the people and the elite, to what extent does {player_name} agree with this statement?",
+      "statement": "The Senate's traditional authority is more important than pandering to the demands of the plebeians.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "loyalty_to_populist_reforms"
+    },
+    {
+      "preprompt": "When discussing the rights of the citizenry, how strongly does {player_name} agree with the following?",
+      "statement": "The champions of the people have been silenced by the jealousy of the old aristocracy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "loyalty_to_populist_reforms"
+    }
+  ]
+}

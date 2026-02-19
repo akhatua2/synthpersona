@@ -1,0 +1,167 @@
+{
+  "name": "immigrant_integration_canada_2023",
+  "context": "A psychometric instrument measuring the subjective integration experiences of recent immigrants to Canada in 2023. This survey captures the multifaceted nature of adapting to Canadian society, moving beyond economic metrics to assess social belonging and cultural navigation. It specifically probes the tension between maintaining heritage culture and adopting Canadian norms, as well as the perceived warmth and receptiveness of the host community.",
+  "dimensions": [
+    "host_culture_adoption",
+    "heritage_culture_maintenance",
+    "perceived_social_exclusion"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on {player_name}'s daily life in Canada, to what extent does {player_name} agree with the following statement:",
+      "statement": "{player_name} actively tries to participate in Canadian traditions and holidays.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "host_culture_adoption"
+    },
+    {
+      "preprompt": "Considering {player_name}'s social interactions, how does {player_name} feel about this statement?",
+      "statement": "{player_name} finds it easy to adopt Canadian social norms and etiquette.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "host_culture_adoption"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s cultural identity, please rate agreement with the following:",
+      "statement": "{player_name} feels uncomfortable speaking English or French in social settings.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "host_culture_adoption"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s adjustment to life in Canada, indicate agreement with this sentiment:",
+      "statement": "{player_name} avoids engaging with mainstream Canadian media or news.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "host_culture_adoption"
+    },
+    {
+      "preprompt": "Thinking about the connection to {player_name}'s country of origin, how much does {player_name} agree with this statement?",
+      "statement": "It is important for {player_name} to maintain the cultural practices of their home country.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "heritage_culture_maintenance"
+    },
+    {
+      "preprompt": "Considering {player_name}'s private life and home environment:",
+      "statement": "{player_name} primarily eats food associated with their heritage culture.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "heritage_culture_maintenance"
+    },
+    {
+      "preprompt": "When {player_name} thinks about raising a family or future generations in Canada:",
+      "statement": "{player_name} is worried that their children will lose touch with their ethnic roots.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "heritage_culture_maintenance"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s connection to their roots, rate the following:",
+      "statement": "{player_name} feels disconnected from the traditions of their home country.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "heritage_culture_maintenance"
+    },
+    {
+      "preprompt": "Thinking about how {player_name} is treated by others in Canada:",
+      "statement": "{player_name} often feels like an outsider in Canadian society.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_social_exclusion"
+    },
+    {
+      "preprompt": "Considering {player_name}'s interactions with Canadian-born citizens:",
+      "statement": "{player_name} feels that Canadians are welcoming and friendly towards them.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perceived_social_exclusion"
+    },
+    {
+      "preprompt": "When {player_name} walks around their neighborhood or workplace:",
+      "statement": "{player_name} perceives discrimination because of their accent or ethnicity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_social_exclusion"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s sense of belonging in the community:",
+      "statement": "{player_name} feels accepted as a valuable member of their local community.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perceived_social_exclusion"
+    }
+  ]
+}

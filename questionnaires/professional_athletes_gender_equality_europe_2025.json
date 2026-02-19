@@ -1,0 +1,141 @@
+{
+  "name": "professional_athletes_gender_equality_europe_2025",
+  "context": "A structured survey designed to capture the attitudes of professional athletes competing in major European leagues regarding gender equity initiatives as of 2025. Following several years of aggressive policy changes by governing bodies (e.g., FIFA, FIBA, UEFA) aimed at closing the pay gap and increasing media visibility for women's sports, this instrument assesses whether athletes perceive these changes as sufficient, excessive, or well-balanced. It specifically targets the tension between traditional meritocratic revenue arguments and progressive equity mandates within the locker room culture.",
+  "dimensions": [
+    "structural_equity_support",
+    "resource_allocation_fairness",
+    "cultural_inclusivity_perception"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the recent policy changes by league governing bodies, how does {player_name} view the current push for structural reform?",
+      "statement": "The aggressive mandates implemented by organizations like UEFA and FIFA are absolutely necessary to correct historical injustices in the sport.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "structural_equity_support"
+    },
+    {
+      "preprompt": "Reflecting on the pace of change within the league, what is {player_name}'s perspective on these initiatives?",
+      "statement": "The push for gender parity in administrative and coaching roles is happening too quickly and feels forced.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "structural_equity_support"
+    },
+    {
+      "preprompt": "When thinking about the future of professional sports governance, to what extent does {player_name} agree with this sentiment?",
+      "statement": "{player_name} believes that strictly enforced quotas for female representation on boards are the only way to ensure lasting change.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "structural_equity_support"
+    },
+    {
+      "preprompt": "Regarding the financial side of the sport, specifically revenue and salaries, how does {player_name} feel?",
+      "statement": "It is unfair to subsidize women's leagues using revenue generated primarily by the men's game.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "resource_allocation_fairness"
+    },
+    {
+      "preprompt": "Considering training facilities and media coverage, please indicate {player_name}'s level of agreement:",
+      "statement": "{player_name} supports equal investment in marketing and broadcasting for both men's and women's teams, regardless of current viewership numbers.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resource_allocation_fairness"
+    },
+    {
+      "preprompt": "Thinking about the distribution of club resources, how does {player_name} react to this statement?",
+      "statement": "Allocating prime-time slots and main stadium access equally between genders is a justified business strategy for long-term growth.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resource_allocation_fairness"
+    },
+    {
+      "preprompt": "Assessing the locker room atmosphere and general attitude among peers, how does {player_name} perceive the culture?",
+      "statement": "{player_name} feels that the locker room culture has become genuinely more respectful and inclusive towards women in the sport over the last few years.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "cultural_inclusivity_perception"
+    },
+    {
+      "preprompt": "Reflecting on interactions with teammates and staff, what is {player_name}'s observation?",
+      "statement": "Most support for gender equity expressed by male athletes is merely performative public relations rather than genuine belief.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "cultural_inclusivity_perception"
+    },
+    {
+      "preprompt": "Considering the daily environment at the training ground, to what extent does {player_name} agree?",
+      "statement": "{player_name} often hears dismissive or sexist comments about women's sports disguised as 'banter' among colleagues.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "cultural_inclusivity_perception"
+    },
+    {
+      "preprompt": "Regarding the integration of staff, how does {player_name} view the current situation?",
+      "statement": "{player_name} is perfectly comfortable being coached or managed by female technical staff within the men's team setup.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "cultural_inclusivity_perception"
+    }
+  ]
+}

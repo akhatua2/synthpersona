@@ -1,0 +1,141 @@
+{
+  "name": "organic_farmers_kenya_2023",
+  "context": "A structured survey designed to capture the perspectives of smallholder farmers in Kenya regarding the transition to organic agriculture. Set against a backdrop of rising fertilizer costs and climate unpredictability in 2023, this instrument explores the perceived viability of organic methods versus conventional chemical inputs. It aims to distinguish between economic motivations, environmental stewardship, and the practical barriers hindering adoption, such as market access and certification costs.",
+  "dimensions": [
+    "economic_viability_perception",
+    "environmental_stewardship_motivation",
+    "market_access_barriers"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about the costs and profits of farming this season, to what extent does {player_name} agree with the following:",
+      "statement": "Switching to organic farming would significantly increase {player_name}'s household income compared to using chemical fertilizers.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_viability_perception"
+    },
+    {
+      "preprompt": "Reflecting on the financial risks involved in farming, how does {player_name} view this statement?",
+      "statement": "The upfront cost of organic inputs and labor is too high for {player_name} to afford right now.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_viability_perception"
+    },
+    {
+      "preprompt": "Considering the price of fertilizers in 2023, does {player_name} agree with the following:",
+      "statement": "Organic methods offer a more stable financial future for {player_name} than relying on expensive imported chemicals.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_viability_perception"
+    },
+    {
+      "preprompt": "Regarding the health of the land and soil, to what extent does {player_name} agree?",
+      "statement": "It is {player_name}'s duty to protect the soil for future generations, even if it means lower yields in the short term.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "environmental_stewardship_motivation"
+    },
+    {
+      "preprompt": "When {player_name} thinks about the changing climate and weather patterns, how much do they agree with this statement?",
+      "statement": "{player_name} is primarily motivated by profit rather than by concerns about soil health or biodiversity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "environmental_stewardship_motivation"
+    },
+    {
+      "preprompt": "Considering the impact of chemicals on the local environment, does {player_name} agree?",
+      "statement": "Using organic methods is important to {player_name} because it reduces water contamination in the community.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "environmental_stewardship_motivation"
+    },
+    {
+      "preprompt": "Thinking about selling farm produce, to what extent does {player_name} agree with the following:",
+      "statement": "It is difficult for {player_name} to find buyers who are willing to pay a premium price for organic crops.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "market_access_barriers"
+    },
+    {
+      "preprompt": "Regarding the process of verifying crops as organic, how does {player_name} feel about this statement?",
+      "statement": "The certification process required to sell organic goods is simple and accessible for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "market_access_barriers"
+    },
+    {
+      "preprompt": "Considering the local transportation and market infrastructure, does {player_name} agree?",
+      "statement": "{player_name} lacks the necessary connections to reach markets that value organic produce.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "market_access_barriers"
+    },
+    {
+      "preprompt": "When considering the logistics of selling harvest, to what extent does {player_name} agree?",
+      "statement": "{player_name} believes there is a reliable and steady demand for organic vegetables in the local markets.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "market_access_barriers"
+    }
+  ]
+}

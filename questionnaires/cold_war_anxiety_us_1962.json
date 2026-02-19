@@ -1,0 +1,141 @@
+{
+  "name": "cold_war_anxiety_us_1962",
+  "context": "A psychometric survey capturing the psychological state of American citizens during the height of Cold War tensions in 1962. Amidst the proliferation of fallout shelters, 'Duck and Cover' drills, and the looming Cuban Missile Crisis, this instrument assesses the pervasive dread of nuclear annihilation and the degree of trust placed in government containment strategies. It aims to quantify the psychological toll of living under the constant threat of Mutually Assured Destruction.",
+  "dimensions": [
+    "nuclear_annihilation_dread",
+    "faith_in_civil_defense",
+    "anticommunist_vigilance"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the daily news and the current international climate, how does {player_name} feel about the following statement:",
+      "statement": "The thought that a nuclear war could start at any moment keeps {player_name} awake at night.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "nuclear_annihilation_dread"
+    },
+    {
+      "preprompt": "Considering the future that {player_name} envisions for their family, to what extent do they agree:",
+      "statement": "{player_name} finds it difficult to make long-term plans because they fear the world will end in atomic fire.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "nuclear_annihilation_dread"
+    },
+    {
+      "preprompt": "When {player_name} hears the sirens being tested or sees a fallout shelter sign, how much do they agree with this statement:",
+      "statement": "{player_name} feels confident that nuclear war is unlikely to happen in their lifetime.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "nuclear_annihilation_dread"
+    },
+    {
+      "preprompt": "Regarding the government's safety protocols and local preparedness, how does {player_name} respond to the following:",
+      "statement": "Building a backyard fallout shelter is a practical way to ensure {player_name}'s survival during an attack.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "faith_in_civil_defense"
+    },
+    {
+      "preprompt": "Thinking about the 'Duck and Cover' drills practiced in schools and workplaces, does {player_name} agree:",
+      "statement": "Civil defense drills are mostly theatre and would do little to save {player_name} from a real hydrogen bomb.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "faith_in_civil_defense"
+    },
+    {
+      "preprompt": "When considering the advice given by civil defense wardens, to what extent does {player_name} agree:",
+      "statement": "{player_name} trusts that the government has adequate plans to protect citizens in the event of a strike.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "faith_in_civil_defense"
+    },
+    {
+      "preprompt": "Looking at the people in {player_name}'s community and workplace, how strongly do they agree with this sentiment:",
+      "statement": "It is {player_name}'s civic duty to report anyone suspected of harboring communist sympathies.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "anticommunist_vigilance"
+    },
+    {
+      "preprompt": "Considering the political discussions happening in the country right now, does {player_name} agree:",
+      "statement": "The internal threat of communist subversion is just as dangerous as the external Soviet military threat.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "anticommunist_vigilance"
+    },
+    {
+      "preprompt": "When thinking about freedom of speech and political diversity, how does {player_name} view the following:",
+      "statement": "{player_name} believes that people should be free to read Marxist literature without being investigated by the authorities.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "anticommunist_vigilance"
+    },
+    {
+      "preprompt": "Regarding the influence of foreign ideologies in America, to what extent does {player_name} agree:",
+      "statement": "We must be constantly on guard, for the enemy could be anyone\u2014even a neighbor or a teacher.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "anticommunist_vigilance"
+    }
+  ]
+}

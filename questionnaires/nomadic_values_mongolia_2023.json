@@ -1,0 +1,141 @@
+{
+  "name": "nomadic_values_mongolia_2023",
+  "context": "A sociological survey conducted in 2023 among semi-nomadic herders in Mongolia. As climate change (dzud) and urbanization put pressure on traditional lifestyles, this instrument investigates how herders balance their ancestral connection to the steppe with the allure and necessity of modern conveniences and city life. It specifically targets heads of households living in gers who migrate seasonally but have access to mobile technology and vehicles.",
+  "dimensions": [
+    "commitment_to_nomadism",
+    "openness_to_urban_modernity",
+    "ecological_optimism"
+  ],
+  "questions": [
+    {
+      "preprompt": "As {player_name} looks out over the pasture lands, how strongly does {player_name} agree with this statement regarding their way of life?",
+      "statement": "There is no life for {player_name} other than following the herds across the steppe.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "commitment_to_nomadism"
+    },
+    {
+      "preprompt": "Considering the future of {player_name}'s family, to what extent does {player_name} agree?",
+      "statement": "If given the chance, {player_name} would sell the livestock and move to Ulaanbaatar permanently.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "commitment_to_nomadism"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s identity as a herder, rate agreement with the following:",
+      "statement": "Living in a fixed building made of brick or concrete feels like a trap to {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "commitment_to_nomadism"
+    },
+    {
+      "preprompt": "Thinking about the traditions passed down from ancestors, does {player_name} agree?",
+      "statement": "The freedom of the open grassland is worth more to {player_name} than the comfort of city heating.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "commitment_to_nomadism"
+    },
+    {
+      "preprompt": "When {player_name} thinks about modern conveniences, how much does {player_name} agree with this sentiment?",
+      "statement": "Having a smartphone and internet access has made {player_name}'s life as a herder significantly better.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "openness_to_urban_modernity"
+    },
+    {
+      "preprompt": "Considering the education and future of children, does {player_name} agree?",
+      "statement": "The traditional skills of herding are more valuable to learn than modern school subjects.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "openness_to_urban_modernity"
+    },
+    {
+      "preprompt": "How does {player_name} feel about the changing times?",
+      "statement": "{player_name} often wishes for more access to the medical and educational facilities found in the city.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "openness_to_urban_modernity"
+    },
+    {
+      "preprompt": "Looking at the changes in the climate and the land, to what extent does {player_name} agree?",
+      "statement": "The pasture lands will recover and provide enough grass for the herds in the coming years.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ecological_optimism"
+    },
+    {
+      "preprompt": "Thinking about the severity of recent winters (dzud), does {player_name} agree?",
+      "statement": "{player_name} fears that the environment is becoming too harsh to support the herds much longer.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "ecological_optimism"
+    },
+    {
+      "preprompt": "Considering the water sources and grass quality this season, rate {player_name}'s agreement:",
+      "statement": "Nature has always provided for {player_name}'s ancestors, and {player_name} trusts it will continue to do so.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ecological_optimism"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "name": "financial_literacy_brazil_students_2024",
+  "context": "A psychometric assessment of financial behaviors and mindset among university students in Brazil in 2024. Against a backdrop of high inflation history, the rise of digital banking (Pix), and aggressive credit marketing, this instrument explores how young adults manage limited resources while navigating academic pressures. It seeks to understand the balance between present-focused consumption versus future-oriented saving, as well as the emotional anxiety or confidence surrounding debt and financial planning.",
+  "dimensions": [
+    "temporal_discounting_orientation",
+    "financial_anxiety_vs_confidence",
+    "credit_dependence_propensity"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering how {player_name} views money and time, please rate agreement with the following:",
+      "statement": "{player_name} prefers to spend money on experiences today rather than saving for a distant, uncertain future.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "temporal_discounting_orientation"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s financial habits, to what extent do they agree with this statement?",
+      "statement": "Even if {player_name} wants something badly right now, they are willing to wait months to buy it without debt.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "temporal_discounting_orientation"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s spending philosophy as a student, how much does this apply?",
+      "statement": "With inflation being unpredictable, {player_name} feels it makes more sense to enjoy money now than to hoard it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "temporal_discounting_orientation"
+    },
+    {
+      "preprompt": "When {player_name} thinks about their bank balance and bills, how do they feel?",
+      "statement": "The thought of checking {player_name}'s bank account balance makes their stomach turn with nervousness.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "financial_anxiety_vs_confidence"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s ability to manage funds, please rate the following:",
+      "statement": "{player_name} feels fully capable of creating a budget and sticking to it through the end of the semester.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "financial_anxiety_vs_confidence"
+    },
+    {
+      "preprompt": "Thinking about the future, how does {player_name} relate to this statement?",
+      "statement": "{player_name} feels overwhelmed and hopeless when thinking about how they will pay off their student expenses.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "financial_anxiety_vs_confidence"
+    },
+    {
+      "preprompt": "Considering {player_name}'s approach to credit cards and digital payments, rate agreement with:",
+      "statement": "If {player_name} runs out of cash before the month ends, they see using a credit card as a perfectly normal solution.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "credit_dependence_propensity"
+    },
+    {
+      "preprompt": "When offered new financial products, how does {player_name} react?",
+      "statement": "{player_name} would never buy a consumer item on installment plans (parcelado) if they couldn't afford it in cash upfront.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "credit_dependence_propensity"
+    },
+    {
+      "preprompt": "Thinking about the ease of digital transactions like Pix and credit limits:",
+      "statement": "{player_name} often relies on the overdraft limit or 'special check' to get through the weekend.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "credit_dependence_propensity"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s purchasing habits:",
+      "statement": "Buying things on credit feels like 'free money' to {player_name} in the moment.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "credit_dependence_propensity"
+    }
+  ]
+}

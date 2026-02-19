@@ -1,0 +1,128 @@
+{
+  "name": "athenian_piety_olympian_gods_430bc",
+  "context": "A psychometric evaluation of religious sentiment among Athenian citizens during the early stages of the Peloponnesian War. This instrument seeks to understand how individuals balance public civic duty with private belief in an era where impiety could be legally prosecuted. It assesses the depth of their devotion to the Olympians, their reliance on ritual for state protection, and their skepticism regarding traditional myths amidst the rise of sophist philosophy.",
+  "dimensions": [
+    "orthopraxy_and_ritual_observance",
+    "theological_traditionalism_vs_rationalism",
+    "divine_interventionalism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Regarding {player_name}'s daily habits and household management, indicate agreement with the following:",
+      "statement": "{player_name} ensures that the proper libations are poured to Hestia and the household gods at every meal without fail.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "orthopraxy_and_ritual_observance"
+    },
+    {
+      "preprompt": "Considering the current war with Sparta and the safety of the polis, how does {player_name} view public ceremonies?",
+      "statement": "Attending the great festivals like the Panathenaea is merely a social obligation for {player_name} rather than a necessary act to secure Athens' safety.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "orthopraxy_and_ritual_observance"
+    },
+    {
+      "preprompt": "When {player_name} prepares for a significant undertaking or business venture:",
+      "statement": "{player_name} would never proceed without first consulting an oracle or examining the entrails of a sacrifice.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "orthopraxy_and_ritual_observance"
+    },
+    {
+      "preprompt": "Reflecting on the stories of the gods taught since childhood, to what extent does {player_name} agree:",
+      "statement": "The tales of Homer and Hesiod are literal histories of the gods' deeds, not merely allegories or inventions of men.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "theological_traditionalism_vs_rationalism"
+    },
+    {
+      "preprompt": "When discussing the nature of the divine with friends at the agora, {player_name} believes:",
+      "statement": "Natural phenomena, such as lightning or eclipses, have physical causes that can be explained without invoking the wrath of Zeus or Helios.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "theological_traditionalism_vs_rationalism"
+    },
+    {
+      "preprompt": "Considering the teachings of the new philosophers arriving in Athens:",
+      "statement": "{player_name} finds the sophists' questioning of the gods' existence to be dangerous and potentially impious.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "theological_traditionalism_vs_rationalism"
+    },
+    {
+      "preprompt": "Looking at the state of the war and the plague affecting the city, how does {player_name} interpret these events?",
+      "statement": "The misfortunes falling upon Athens are clear evidence that the gods have abandoned the city or are actively punishing us.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "divine_interventionalism"
+    },
+    {
+      "preprompt": "When thinking about the outcome of battles or the fate of the harvest:",
+      "statement": "{player_name} believes that human strategy and skill determine victory far more than the favor of Ares or Athena.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "divine_interventionalism"
+    },
+    {
+      "preprompt": " Regarding the direct influence of the Olympians on {player_name}'s personal life:",
+      "statement": "{player_name} is confident that proper prayer can directly influence the gods to change the course of destiny in {player_name}'s favor.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "divine_interventionalism"
+    }
+  ]
+}

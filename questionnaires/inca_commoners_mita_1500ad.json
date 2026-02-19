@@ -1,0 +1,154 @@
+{
+  "name": "inca_commoners_mita_1500ad",
+  "context": "A psychometric evaluation of the attitudes and experiences of 'Hatun Runa' (commoners) within the Inca Empire regarding the mita labor tax system around 1500 AD. The instrument explores the delicate balance between civic duty to the Sapa Inca and the personal hardships of mandatory labor rotations in agriculture, infrastructure, or military service. It aims to capture the degree to which individuals view this obligation as a sacred reciprocal exchange (ayni) versus an oppressive burden imposed by the state.",
+  "dimensions": [
+    "perceived_reciprocity_and_duty",
+    "labor_hardship_burden",
+    "social_standing_impact"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on {player_name}'s contribution to the state's granaries and roads, rate the following:",
+      "statement": "The labor {player_name} provides to the Inca is a fair exchange for the food and protection the state provides in return.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_reciprocity_and_duty"
+    },
+    {
+      "preprompt": "Considering the sacred laws of Tawantinsuyu, how does {player_name} view their service?",
+      "statement": "Serving the Sapa Inca through mita is a sacred honor that maintains balance in the world.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_reciprocity_and_duty"
+    },
+    {
+      "preprompt": "When thinking about the demands of the local curaca (administrator), consider this:",
+      "statement": "The empire takes far more from {player_name} in sweat and toil than it ever gives back in security.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "perceived_reciprocity_and_duty"
+    },
+    {
+      "preprompt": "Regarding the time spent away from {player_name}'s own fields and ayllu:",
+      "statement": "{player_name} believes that the rotational labor system is essential for the prosperity of all people under the sun.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "perceived_reciprocity_and_duty"
+    },
+    {
+      "preprompt": "After returning from a long rotation of service, how does {player_name} feel?",
+      "statement": "The physical demands of mita labor leave {player_name} too exhausted to care for their own family's crops.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "labor_hardship_burden"
+    },
+    {
+      "preprompt": "Considering the conditions faced while building terraces or serving the army:",
+      "statement": "The work assigned to {player_name} during the mita rotation is manageable and does not cause suffering.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "labor_hardship_burden"
+    },
+    {
+      "preprompt": "When assessing the difficulty of the tasks assigned by the overseers:",
+      "statement": "The labor required by the state is a crushing weight that {player_name} fears will break them.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "labor_hardship_burden"
+    },
+    {
+      "preprompt": "Thinking about the time spent traveling to and working at distant sites:",
+      "statement": "{player_name} feels constantly anxious about the hardship of the next labor rotation.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "labor_hardship_burden"
+    },
+    {
+      "preprompt": "Observing how the community views those who complete their service:",
+      "statement": "Successfully completing mita service increases the respect {player_name} receives from the ayllu elders.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_standing_impact"
+    },
+    {
+      "preprompt": "Considering {player_name}'s reputation among peers:",
+      "statement": "{player_name} would feel deep shame in the eyes of neighbors if they failed to meet the labor quota.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "social_standing_impact"
+    },
+    {
+      "preprompt": "Reflecting on the relationship between labor service and social status:",
+      "statement": "No matter how hard {player_name} works for the state, their standing within the community remains unchanged.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "social_standing_impact"
+    }
+  ]
+}

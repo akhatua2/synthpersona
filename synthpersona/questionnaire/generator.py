@@ -113,6 +113,8 @@ class QuestionnaireGenerator:
                 description=description,
             ),
         )
+        if not isinstance(step1_result, dict):
+            raise ValueError(f"Step 1 returned {type(step1_result).__name__}, expected dict")
         context = step1_result["context"]
         dimensions = step1_result["dimensions"]
 
@@ -126,6 +128,10 @@ class QuestionnaireGenerator:
                 dimensions=json.dumps(dimensions),
             ),
         )
+
+        # Handle LLM returning a list of questions directly
+        if isinstance(step2_result, list):
+            step2_result = {"questions": step2_result}
 
         questions = [Question(**q) for q in step2_result["questions"]]
 

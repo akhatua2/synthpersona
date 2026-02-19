@@ -1,0 +1,141 @@
+{
+  "name": "trojan_war_achaen_morale_1184bc",
+  "context": "A psychometric evaluation of Achaean troop morale during the protracted siege of Troy, circa 1184 BC. This instrument is designed to assess the psychological state of the rank-and-file soldiery after nine years of stalemate, plague, and internecine leadership disputes (e.g., between Achilles and Agamemnon). It explores their motivation to continue fighting, their trust in divine favor and leadership, and their overwhelming desire for 'nostos' (homecoming) versus the pursuit of 'kleos' (glory).",
+  "dimensions": [
+    "war_fatigue_vs_glory_seeking",
+    "faith_in_leadership_and_divine_will",
+    "longing_for_home_nostos"
+  ],
+  "questions": [
+    {
+      "preprompt": "As the fires of the tenth year burn low, reflect on {player_name}'s spirit for battle. To what extent does {player_name} agree with this statement?",
+      "statement": "The promise of eternal glory (kleos) makes every year spent on these sandy beaches worth the hardship.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "war_fatigue_vs_glory_seeking"
+    },
+    {
+      "preprompt": "Thinking about the endless skirmishes and the immovable walls of Ilium, consider {player_name}'s current state of mind:",
+      "statement": "{player_name} feels entirely drained of the will to fight, believing this war has become a futile waste of life.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "war_fatigue_vs_glory_seeking"
+    },
+    {
+      "preprompt": "When {player_name} looks upon the armor of fallen comrades, how does {player_name} perceive their sacrifice?",
+      "statement": "Whatever suffering {player_name} endures is a small price to pay for the immortal fame that songs will carry of our deeds here.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "war_fatigue_vs_glory_seeking"
+    },
+    {
+      "preprompt": "Considering the plague that has ravaged the camp and the arguments of the kings, how does {player_name} view the command structure?",
+      "statement": "{player_name} believes that King Agamemnon and the other basileus are leading the army toward a certain victory sanctioned by Zeus.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "faith_in_leadership_and_divine_will"
+    },
+    {
+      "preprompt": "Reflecting on the recent quarrels over war-prizes and the withdrawal of Achilles, assess {player_name}'s confidence:",
+      "statement": "The gods have abandoned the Achaean cause, leaving {player_name} and the army to die on foreign soil.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "faith_in_leadership_and_divine_will"
+    },
+    {
+      "preprompt": "Looking at the strategy employed over the last nine years, how much trust does {player_name} place in the generals?",
+      "statement": "The wisdom of Odysseus and Nestor ensures that our sacrifices are part of a divine plan that will ultimately topple Troy.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "faith_in_leadership_and_divine_will"
+    },
+    {
+      "preprompt": "As {player_name} gazes across the wine-dark sea toward the west, how strong is the pull of home?",
+      "statement": "The thought of returning to {player_name}'s own hearth and fields consumes {player_name}'s thoughts more than any plunder or victory.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "longing_for_home_nostos"
+    },
+    {
+      "preprompt": "Considering the life {player_name} left behind in Argos or Phthia, evaluate the following sentiment:",
+      "statement": "{player_name} would happily remain at Troy for another ten years if it meant seeing the city burn.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "longing_for_home_nostos"
+    },
+    {
+      "preprompt": "When dreaming at night in the shelter of the black ships, what vision visits {player_name} most often?",
+      "statement": "{player_name} aches for the embrace of family so intensely that it is a physical pain.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "longing_for_home_nostos"
+    },
+    {
+      "preprompt": "Weighing the value of returning alive versus returning victorious, where does {player_name} stand?",
+      "statement": "A safe return (nostos) without the spoils of war would be a shameful failure {player_name} could not bear.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "longing_for_home_nostos"
+    }
+  ]
+}

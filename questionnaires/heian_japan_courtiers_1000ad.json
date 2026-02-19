@@ -1,0 +1,141 @@
+{
+  "name": "heian_japan_courtiers_1000ad",
+  "context": "A psychometric instrument designed to capture the nuanced social and aesthetic priorities of Japanese aristocrats in Heian-kyo around the year 1000 AD. The questionnaire investigates how courtiers navigate the delicate balance between refined aesthetic appreciation (miyabi) and the ruthless political maneuvering required for advancement within the rigid hierarchy. It aims to differentiate individuals based on their dedication to artistic sensitivity versus their pragmatic ambition for rank and influence within the powerful Fujiwara-dominated court.",
+  "dimensions": [
+    "aesthetic_sensitivity_miyabi",
+    "political_pragmatism",
+    "adherence_to_ritual_decorum"
+  ],
+  "questions": [
+    {
+      "preprompt": "As {player_name} gazes upon the cherry blossoms falling in the garden, consider how much {player_name} resonates with the following sentiment:",
+      "statement": "The fleeting beauty of a fading bloom moves {player_name} to tears more readily than any political victory.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "aesthetic_sensitivity_miyabi"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s daily priorities within the court, indicate the level of agreement with this statement:",
+      "statement": "Spending an afternoon composing waka poetry about the moonlight is a frivolous waste of time compared to securing an audience with the Minister of the Left.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "aesthetic_sensitivity_miyabi"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s appreciation for refinement, how would {player_name} respond to the following?",
+      "statement": "The inability to distinguish between the various shades of layered silk robes reveals a fatal flaw in one's character.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "aesthetic_sensitivity_miyabi"
+    },
+    {
+      "preprompt": "Considering the harsh realities of court life under the Fujiwara, how much does {player_name} agree with this view?",
+      "statement": "Advancement in rank is the only true measure of a courtier's worth, regardless of the means used to achieve it.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "political_pragmatism"
+    },
+    {
+      "preprompt": "When faced with a choice between loyalty to a friend and political gain, consider {player_name}'s position:",
+      "statement": "{player_name} would never betray a confidant merely to gain favor with the Regent.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "political_pragmatism"
+    },
+    {
+      "preprompt": "Regarding the subtle alliances within the Heian court, to what extent does {player_name} agree with the following?",
+      "statement": "Marrying one's daughters into the imperial line is the most effective strategy for securing long-term influence.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "political_pragmatism"
+    },
+    {
+      "preprompt": "Thinking about the strict rules governing court behavior, how does {player_name} feel about this statement?",
+      "statement": "Failing to observe the precise directional taboos for travel is a reckless invitation for disaster.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adherence_to_ritual_decorum"
+    },
+    {
+      "preprompt": "When attending the Kamo Festival, consider {player_name}'s attitude towards protocol:",
+      "statement": "Ideally, {player_name} believes that strict adherence to ceremonial precedence is less important than the genuine spirit of the celebration.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "adherence_to_ritual_decorum"
+    },
+    {
+      "preprompt": "Reflecting on the importance of social etiquette, to what extent does {player_name} agree?",
+      "statement": "A letter sent with improper calligraphy or on the wrong shade of paper is an unforgivable breach of decorum.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adherence_to_ritual_decorum"
+    },
+    {
+      "preprompt": "Concerning the rituals that bind the aristocracy, how does {player_name} view the following:",
+      "statement": "The ancient rites must be performed exactly as prescribed, for they hold the fabric of the state together.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "adherence_to_ritual_decorum"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "name": "scifi_authors_future_ai_space_2024",
+  "context": "A psychometric survey targeting science fiction authors active in 2024 to map their speculative outlooks on the convergence of Artificial Intelligence and space exploration. This instrument seeks to understand whether contemporary creators view these technologies as synergistic paths to utopia or as existential risks that compound one another. It captures the tension between techno-optimism (AI as a necessary tool for interstellar travel) and cautionary skepticism (AI as a filter or threat to human agency in the cosmos).",
+  "dimensions": [
+    "techno_optimism_synergy",
+    "existential_skepticism"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on the future of humanity among the stars, how strongly does {player_name} align with this view?",
+      "statement": "Without the advanced capabilities of Artificial Intelligence, human colonization of other planets is practically impossible.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "techno_optimism_synergy"
+    },
+    {
+      "preprompt": "Considering {player_name}'s perspective on technological evolution, please rate the agreement with the following:",
+      "statement": "The integration of AI into spacecraft systems will usher in a new golden age of discovery for our species.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "techno_optimism_synergy"
+    },
+    {
+      "preprompt": "When {player_name} imagines the long-term partnership between humans and machines, do they agree with this sentiment?",
+      "statement": "We should limit the autonomy of AI in deep space missions, even if it means slowing down our exploration significantly.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "techno_optimism_synergy"
+    },
+    {
+      "preprompt": "Thinking about the creative narratives {player_name} might explore, to what extent is the following statement true?",
+      "statement": "AI serves as the essential bridge that will allow biological life to overcome the harsh limitations of the cosmic environment.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "techno_optimism_synergy"
+    },
+    {
+      "preprompt": "Regarding the potential risks facing humanity, how does {player_name} evaluate this statement?",
+      "statement": "Sending highly advanced AI into the cosmos increases the likelihood that humanity will be extinguished rather than saved.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_skepticism"
+    },
+    {
+      "preprompt": "When visualizing the distant future, does {player_name} agree with the following assessment?",
+      "statement": "The combination of self-replicating probes and artificial intelligence represents a catastrophic 'Great Filter' event waiting to happen.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_skepticism"
+    },
+    {
+      "preprompt": "Considering the theme of human agency in space, how does {player_name} respond to this?",
+      "statement": "The risks of AI rebellion are negligible compared to the benefits of automated galaxy-wide exploration.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "existential_skepticism"
+    },
+    {
+      "preprompt": "As {player_name} contemplates the trajectory of our species, do they agree with this caution?",
+      "statement": "Allowing AI to manage extra-planetary colonies will inevitably lead to the loss of human control over our own destiny.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "existential_skepticism"
+    }
+  ]
+}

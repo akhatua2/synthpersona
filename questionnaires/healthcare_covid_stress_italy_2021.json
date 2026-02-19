@@ -1,0 +1,141 @@
+{
+  "name": "healthcare_covid_stress_italy_2021",
+  "context": "A psychometric assessment of frontline healthcare workers in Italy during the second year of the COVID-19 pandemic. By 2021, Italian medical professionals had endured successive waves of high infection rates, resource shortages, and severe psychological strain, shifting from initial adrenaline-fueled heroism to chronic exhaustion. This instrument measures the specific dimensions of their psychological state, focusing on emotional exhaustion, feelings of professional efficacy amidst chaos, and the moral injury sustained from triaging care under scarcity.",
+  "dimensions": [
+    "emotional_exhaustion",
+    "moral_injury_and_distress",
+    "professional_efficacy_perception"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on {player_name}'s recent shifts at the hospital during this prolonged crisis, rate the extent of agreement with the following statement:",
+      "statement": "{player_name} feels emotionally drained from work every single day.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "emotional_exhaustion"
+    },
+    {
+      "preprompt": "Considering the current state of {player_name}'s mental health after months of emergency response:",
+      "statement": "When {player_name} wakes up in the morning, they feel energized and ready to face another day at the clinic.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "emotional_exhaustion"
+    },
+    {
+      "preprompt": "Thinking about the toll the pandemic has taken on {player_name}, how accurate is this statement:",
+      "statement": "Working with patients directly is placing too much stress on {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "emotional_exhaustion"
+    },
+    {
+      "preprompt": "Regarding the difficult decisions {player_name} has been forced to make due to resource scarcity:",
+      "statement": "{player_name} is haunted by the triage decisions they had to make regarding which patients received critical care.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "moral_injury_and_distress"
+    },
+    {
+      "preprompt": "Reflecting on the ethical challenges faced during the surges of infection:",
+      "statement": "{player_name} feels that they were able to provide the standard of care that aligns with their personal values.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "moral_injury_and_distress"
+    },
+    {
+      "preprompt": "Considering the sense of betrayal or conflict {player_name} may feel regarding the healthcare system:",
+      "statement": "{player_name} feels that the system forced them to act in ways that violated their moral code.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "moral_injury_and_distress"
+    },
+    {
+      "preprompt": "Assessing {player_name}'s sense of professional accomplishment despite the chaotic environment:",
+      "statement": "{player_name} feels they are effectively solving the problems that arise in their work.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "professional_efficacy_perception"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s ability to impact patient outcomes positively:",
+      "statement": "{player_name} feels confident that they are making a positive difference in other people's lives through their work.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "professional_efficacy_perception"
+    },
+    {
+      "preprompt": "When considering {player_name}'s professional capabilities amidst the ongoing emergency:",
+      "statement": "{player_name} doubts their ability to handle the medical challenges presented by this phase of the pandemic.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "professional_efficacy_perception"
+    },
+    {
+      "preprompt": "Regarding the contribution {player_name} makes to the healthcare team:",
+      "statement": "{player_name} believes they are good at their job.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "professional_efficacy_perception"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "name": "gig_economy_ethics_london_2023",
+  "context": "A psychometric study evaluating worker perceptions of algorithmic management and precarious labor in London's 2023 gig economy. The survey targets delivery drivers, rideshare operators, and freelance taskers, focusing on the tension between the flexibility promised by platforms and the reality of algorithmic surveillance and income instability. It seeks to understand how workers internalize fairness regarding pay structures, dispute resolution, and the opacity of automated decision-making systems.",
+  "dimensions": [
+    "algorithmic_fairness_perception",
+    "economic_precariousness_anxiety",
+    "autonomy_vs_control"
+  ],
+  "questions": [
+    {
+      "preprompt": "Thinking about the app {player_name} uses for work, indicate agreement with this statement:",
+      "statement": "{player_name} trusts that the algorithm distributes tasks and routes in a completely unbiased way.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_fairness_perception"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s recent experiences with platform support, consider the following:",
+      "statement": "When a dispute arises, the automated resolution system feels rigged against {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "algorithmic_fairness_perception"
+    },
+    {
+      "preprompt": "Considering how pay is calculated for {player_name}'s gigs, to what extent does this apply?",
+      "statement": "{player_name} believes the pricing surges and bonuses are calculated transparently and fairly.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "algorithmic_fairness_perception"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s financial situation this month, please rate agreement with the following:",
+      "statement": "{player_name} constantly worries that income next week might not cover basic living expenses in London.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_precariousness_anxiety"
+    },
+    {
+      "preprompt": "How does {player_name} feel about the stability of gig work?",
+      "statement": "{player_name} feels financially secure and confident about future earnings on this platform.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_precariousness_anxiety"
+    },
+    {
+      "preprompt": "Thinking about the possibility of deactivation or 'being fired by the app':",
+      "statement": "The fear of being suddenly blocked from the app keeps {player_name} awake at night.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_precariousness_anxiety"
+    },
+    {
+      "preprompt": "Considering the flexibility promised by the gig economy, how does {player_name} feel?",
+      "statement": "Despite being an 'independent contractor,' {player_name} feels constantly monitored and micromanaged by the app.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "autonomy_vs_control"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s ability to choose when and how to work:",
+      "statement": "{player_name} feels truly free to reject gigs without fearing hidden penalties from the algorithm.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "autonomy_vs_control"
+    },
+    {
+      "preprompt": "Reflecting on the daily experience of logging in:",
+      "statement": "{player_name} feels like the master of their own schedule rather than a servant to the app's notifications.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "autonomy_vs_control"
+    },
+    {
+      "preprompt": "Thinking about the pressure to perform specific tasks:",
+      "statement": "{player_name} feels forced to work during unsafe weather conditions or late hours just to maintain their rating.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "autonomy_vs_control"
+    }
+  ]
+}

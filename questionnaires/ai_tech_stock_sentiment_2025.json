@@ -1,0 +1,128 @@
+{
+  "name": "ai_tech_stock_sentiment_2025",
+  "context": "A financial psychology survey measuring investor attitudes toward the Artificial Intelligence sector in the year 2025. Following the initial boom of generative AI, the market has matured, leading to a bifurcation between established tech giants and speculative startups. This instrument assesses an investor's confidence in the long-term sustainability of AI valuations versus fears of an imminent market bubble burst, as well as their ethical comfort with investing in potentially disruptive technologies.",
+  "dimensions": [
+    "market_optimism_vs_bubble_fear",
+    "risk_tolerance_for_volatility",
+    "ethical_investment_alignment"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the current valuation of major AI companies in 2025, how would {player_name} respond to the following:",
+      "statement": "{player_name} believes the current high stock prices for AI technology firms are justified by their future earnings potential.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "market_optimism_vs_bubble_fear"
+    },
+    {
+      "preprompt": "Reflecting on the rapid growth of the sector, does {player_name} agree or disagree with this assessment:",
+      "statement": "The AI market looks exactly like the 'dot-com' bubble of the early 2000s and is about to crash.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "market_optimism_vs_bubble_fear"
+    },
+    {
+      "preprompt": "Looking at the long-term horizon for 2030 and beyond, evaluate this statement:",
+      "statement": "{player_name} is confident that AI will be the primary driver of global economic growth for the next decade.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "market_optimism_vs_bubble_fear"
+    },
+    {
+      "preprompt": "When {player_name} looks at their portfolio performance during recent market swings:",
+      "statement": "{player_name} would feel comfortable holding onto an AI startup investment even if its value dropped 30% in a single month.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "risk_tolerance_for_volatility"
+    },
+    {
+      "preprompt": "Considering {player_name}'s personal investment strategy regarding new tech:",
+      "statement": "{player_name} prefers stable, low-yield bonds over the unpredictable swings of the emerging AI sector.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "risk_tolerance_for_volatility"
+    },
+    {
+      "preprompt": "Imagine a scenario where regulatory news causes a sharp market correction. How does {player_name} react:",
+      "statement": "{player_name} sees high daily volatility in AI stocks as an opportunity to buy the dip rather than a reason to sell.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "risk_tolerance_for_volatility"
+    },
+    {
+      "preprompt": "Regarding the societal impact of the companies in {player_name}'s portfolio:",
+      "statement": "{player_name} would refuse to invest in an AI company that automates jobs without offering transition support for displaced workers.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ethical_investment_alignment"
+    },
+    {
+      "preprompt": "When evaluating the financial returns of a potential investment:",
+      "statement": "Profit is the only metric that matters to {player_name}, regardless of whether the AI technology is used for surveillance or military applications.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "ethical_investment_alignment"
+    },
+    {
+      "preprompt": "Considering {player_name}'s moral compass in relation to financial decisions:",
+      "statement": "{player_name} actively seeks out AI funds that prioritize 'Responsible AI' governance and safety research.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "ethical_investment_alignment"
+    }
+  ]
+}

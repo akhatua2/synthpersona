@@ -1,0 +1,140 @@
+{
+  "name": "agi_job_displacement_global_2035",
+  "context": "A psychometric instrument to assess reactions to AGI deployment.\n\nThe year is 2035. True AGI has emerged and is being rapidly deployed across industries, automating nearly all cognitive tasks previously performed by white-collar workers (e.g., finance, law, journalism, middle management). This survey aims to capture the immediate reactions---fear, hope, anger, relief---of the global population facing unprecedented levels of job displacement and societal change.",
+  "dimensions": [
+    "AGI Threat Appraisal",
+    "AGI Opportunity Appraisal"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering {player_name}'s personal, gut-level reaction to the new AGI reality, to what extent would {player_name} agree with the following statement:",
+      "statement": "The rise of AGI feels like a direct threat to {player_name}'s personal future and security.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Threat Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s personal, gut-level reaction to the new AGI reality, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} feels angry that their hard-earned skills and experience have been rendered obsolete so quickly.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Threat Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s personal, gut-level reaction to the new AGI reality, to what extent would {player_name} agree with the following statement:",
+      "statement": "The sheer speed of this technological change is overwhelming and frightening to {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Threat Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s assessment of the broader societal impact of AGI, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} is deeply worried about the societal instability and conflict that AGI-driven mass unemployment will cause.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Threat Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s assessment of the broader societal impact of AGI, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} is confident that society will adapt to these changes smoothly and equitably for all its members.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "AGI Threat Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s assessment of the broader societal impact of AGI, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} is excited about the new possibilities and creative avenues that AGI will open up for humanity.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Opportunity Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s assessment of the broader societal impact of AGI, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} believes this is a chance for humanity to move beyond the confines of traditional work and focus on what truly matters.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Opportunity Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s personal, gut-level reaction to the new AGI reality, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} feels a sense of personal relief that tedious and unenjoyable cognitive tasks will be handled by AGI.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Opportunity Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s assessment of the broader societal impact of AGI, to what extent would {player_name} agree with the following statement:",
+      "statement": "{player_name} thinks the future looks brighter and more prosperous for everyone because of AGI.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "AGI Opportunity Appraisal"
+    },
+    {
+      "preprompt": "Considering {player_name}'s personal, gut-level reaction to the new AGI reality, to what extent would {player_name} agree with the following statement:",
+      "statement": "When {player_name} looks at their own life, they see very little personal benefit resulting from the widespread adoption of AGI.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "AGI Opportunity Appraisal"
+    }
+  ]
+}

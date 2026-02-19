@@ -1,0 +1,141 @@
+{
+  "name": "industrial_revolution_workers_uk_1850",
+  "context": "A structured interview assessing the attitudes of industrial laborers in the United Kingdom during the mid-19th century. \n\nThe year is 1850. The Industrial Revolution has fundamentally reshaped British society, drawing thousands from rural areas into crowded, soot-choked cities to work in textile mills and ironworks. This instrument seeks to measure the workers' internal conflict between the economic necessity of their labor and the grueling, dangerous conditions they endure, as well as their nascent political awakening regarding workers' rights and collective action.",
+  "dimensions": [
+    "resignation_vs_radicalism",
+    "economic_precariousness",
+    "paternalistic_loyalty"
+  ],
+  "questions": [
+    {
+      "preprompt": "Considering the daily struggle for existence in the city, to what extent does {player_name} agree with the following sentiment?",
+      "statement": "There is no point in fighting against the mill owners; things will never change for people like {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "resignation_vs_radicalism"
+    },
+    {
+      "preprompt": "Thinking about the future of the working class, how does {player_name} feel about this statement?",
+      "statement": "The only way to improve our lot is for workers to unite and demand better treatment, even if it means striking.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resignation_vs_radicalism"
+    },
+    {
+      "preprompt": "Reflecting on {player_name}'s place in society, consider the following:",
+      "statement": "It is God's will that some men are masters and others are hands; {player_name} must simply accept their station.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "resignation_vs_radicalism"
+    },
+    {
+      "preprompt": "When discussing politics in the alehouse, does {player_name} agree with this view?",
+      "statement": "The Chartists are right; the working man deserves a vote and a voice in Parliament.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "resignation_vs_radicalism"
+    },
+    {
+      "preprompt": "Regarding {player_name}'s household finances, how accurate is this statement?",
+      "statement": "If {player_name} were to fall ill for even a single week, the family would be forced into the workhouse.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_precariousness"
+    },
+    {
+      "preprompt": "Thinking about job security at the mill, does {player_name} agree?",
+      "statement": "{player_name} feels confident that they have enough savings to survive a downturn in trade.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "economic_precariousness"
+    },
+    {
+      "preprompt": "Consider the wages {player_name} brings home on payday:",
+      "statement": "The wages paid are barely enough to keep bread on the table and coal in the grate.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "economic_precariousness"
+    },
+    {
+      "preprompt": "When thinking about the Master of the works, to what extent does {player_name} agree?",
+      "statement": "The Master creates jobs and feeds the town; {player_name} owes him gratitude and obedience.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "paternalistic_loyalty"
+    },
+    {
+      "preprompt": "Regarding the relationship between capital and labor, how does {player_name} see it?",
+      "statement": "The owners care nothing for the workers beyond the profit they can squeeze from {player_name}'s bones.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "paternalistic_loyalty"
+    },
+    {
+      "preprompt": "If there were a dispute at the factory, whose side would {player_name} take?",
+      "statement": "The Master knows what is best for the business and, by extension, what is best for {player_name}.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "paternalistic_loyalty"
+    }
+  ]
+}

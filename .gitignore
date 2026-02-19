@@ -11,8 +11,7 @@ build/
 paper/
 .claude/
 
-# Generated outputs
-questionnaires/
+# Generated outputs (per-run artifacts)
 best_generator.py
 *_personas.json
 *_embeddings.json

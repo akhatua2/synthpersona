@@ -1,0 +1,128 @@
+{
+  "name": "esports_mental_health_sk_2024",
+  "context": "A psychometric assessment targeting professional and semi-professional esports athletes in South Korea during the 2024 competitive season. The instrument investigates the psychological toll of high-stakes gaming, specifically focusing on the pressure to perform within a highly structured team environment and the blurring of boundaries between professional obligations and personal life. It aims to quantify the prevalence of burnout symptoms and the strategies players use to cope with performance anxiety in a hyper-competitive ecosystem.",
+  "dimensions": [
+    "performance_anxiety_and_burnout",
+    "institutional_pressure_compliance",
+    "work_life_boundary_permeability"
+  ],
+  "questions": [
+    {
+      "preprompt": "Reflecting on {player_name}'s recent competitive matches, please rate {player_name}'s agreement with the following:",
+      "statement": "The fear of making a mistake during a match is so overwhelming that it affects {player_name}'s ability to sleep.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "performance_anxiety_and_burnout"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s current mental state during the competitive season:",
+      "statement": "{player_name} feels mentally exhausted even before sitting down at the computer for scrims.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "performance_anxiety_and_burnout"
+    },
+    {
+      "preprompt": "Considering {player_name}'s enthusiasm for the game recently:",
+      "statement": "{player_name} still feels the same level of passion and excitement for playing the game as when {player_name} first started.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "performance_anxiety_and_burnout"
+    },
+    {
+      "preprompt": "Regarding the expectations placed upon {player_name} by the team organization:",
+      "statement": "{player_name} feels compelled to follow the coach's strategies even when {player_name} strongly believes they are incorrect.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "institutional_pressure_compliance"
+    },
+    {
+      "preprompt": "When thinking about the team house rules and management structure:",
+      "statement": "It is acceptable for {player_name} to challenge administrative decisions made by the team owners or managers.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "institutional_pressure_compliance"
+    },
+    {
+      "preprompt": "Considering the sacrifices required for {player_name}'s career:",
+      "statement": "{player_name} accepts that the organization has the right to monitor {player_name}'s activities during free time to ensure peak condition.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "institutional_pressure_compliance"
+    },
+    {
+      "preprompt": "Regarding how {player_name} manages time outside of official training hours:",
+      "statement": "{player_name} finds it impossible to stop thinking about game strategy, even when spending time with family or friends.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "work_life_boundary_permeability"
+    },
+    {
+      "preprompt": "Thinking about {player_name}'s life in the team house:",
+      "statement": "{player_name} often responds to messages from coaches or analysts late at night, well after training has concluded.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": true,
+      "dimension": "work_life_boundary_permeability"
+    },
+    {
+      "preprompt": "Considering {player_name}'s ability to disconnect from the job:",
+      "statement": "{player_name} is able to maintain hobbies and interests that have absolutely nothing to do with gaming or esports.",
+      "choices": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "ascending_scale": false,
+      "dimension": "work_life_boundary_permeability"
+    }
+  ]
+}
